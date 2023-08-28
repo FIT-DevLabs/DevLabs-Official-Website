@@ -1,0 +1,11 @@
+.sec_1_outer {
+    @apply container border-4 border-red-500 border-double 
+    flex items-center justify-center 
+    md:h-96 h-40;
+}
+
+.sec_1_inner {
+    @apply border-4 border-gray-50 border-dashed
+    w-1/2 h-1/2
+    flex items-center justify-center;
+}
