@@ -1,6 +1,6 @@
-import Sample_section_1 from "@/components/sample_page_components/Sample_section_1"
+import Sample_section_1 from "@/components/samplePageComponents/SampleSection1"
 
-export default function Sample_Page() {
+export default function SamplePage() {
     return (
         <>
             <Sample_section_1 />

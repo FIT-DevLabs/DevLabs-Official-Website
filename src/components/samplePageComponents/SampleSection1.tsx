@@ -1,4 +1,4 @@
-import styles from '@/styles/Sample_section_1.module.css'
+import styles from '@/styles/SampleSection1.module.css'
 
 export default function Sample_section_1() {
     return (
