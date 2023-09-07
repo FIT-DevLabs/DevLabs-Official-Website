@@ -1,18 +1,19 @@
 import Image from "next/image";
 
+
 function ListComponent({title , items} ){
   return(
-    <div className="font-sans p-4 flex justify-center items-center">
+    <div className="font-sans lg:p-4 px-8 flex  flex-col ">
       <div>
-        <div><h2 className="text-2xl">{title}</h2></div>
-        <div className=" bg-orange-400 h-1 w-full"></div>
+        <div><h2 className="lg:text-2xl text-xl">{title}</h2></div>
+        <div className=" bg-gradient-to-r from-orange-500 to black h-1 w-full flex justify-center items-center"></div>
       </div>
       
-      <div>
+      <div className="pt-4 flex flex-col w-full items-start">
         {items.map((item,index) =>(
-          <div className="flex flex-row">
+          <div className="flex flex-row pt-[25px]">
             <div className="flex items-center justify-center"><Image alt = "Bullet" width={7} height = {7}  src="/Ellipse 5.png" ></Image></div>
-            <div><li className="list-none text-xl leading-loose" key={index}>{item}</li></div>
+            <div key={index} className="list-none lg:text-xl md:text-base sm:text-sm leading-loose px-3 ">{item}</div>
           </div>
         ))}
       </div>
@@ -32,30 +33,30 @@ export default function Footer() {
   const ServiceList = ['Software Engineering Solutions','Quality Engineering Solutions','Data Science, AI and ML Services','IOT & IOB','DevOps'];
 
   return (
-    <div className="bg-black flex flex-col w-full h-[550px] font-sans text-white px-[68px] py-[20px] ">
-      <div className="flex flex-row mb-16 justify-between">
-        <div className="flex flex-col ">
+    <div className="bg-black flex flex-col w-full  font-sans text-white md:px-[50px] px-[30px] lg:pt-[60px] pb-1 lg:rounded-t-[50px] rounded-t-[30px] pt-[30px]">
+      <div className="flex lg:flex-row flex-col mb-16">
+        <div className="flex flex-col lg:w-1/3 w-full">
           <div>
-          <Image alt ="DevLabs LOGO" width={250} height = {250}  src="/devlabs_logo.png"></Image>
+          <Image alt ="DevLabs LOGO" width={215} height = {215}  src="/devlabs_logo_new.png"></Image>
           </div>
-          <div className="w-[338px]">
-          <p className="text-sm font-normal text-justify ">Empowering Businesses with Complete IT Solutions. Discover the Possibilities at DevLabs.
+          <div>
+          <p className="text-sm font-normal text-justify px-8 ">Empowering Businesses with Complete IT Solutions. Discover the Possibilities at DevLabs.
              Unleash the potential of technology with our comprehensive software services, ranging from development to seamless integration.
              Your success, our commitment.
           </p>
           </div>
           
         </div>
-        <div className="flex flex-row justify-around items-center">
+        <div className="flex flex-row lg:w-3/5 w-full lg:mt-0 mt-8 ">
 
-          <div><ListComponent title = 'Pages' items={PagesList}/></div>
-          <div><ListComponent title = 'Services' items={ServiceList}/></div>
+          <div className="flex w-2/5 lg:justify-center"><ListComponent title = 'Pages' items={PagesList}/></div>
+          <div className="flex w-3/5 lg:justify-center"><ListComponent title = 'Services' items={ServiceList}/></div>
         </div>
         
       </div>
-      <div className="h-1 w-full flex justify-center items-center  bg-orange-400"></div>
+      <div className="h-1   flex justify-center items-center  bg-orange-400 "></div>
       <div></div>
-      <div></div>
+      <div><p className="flex justify-center py-6 text-xs">© Copyright 2023 by DevLabs. All Rights Reserved.</p></div>
     </div>
   )
 }
