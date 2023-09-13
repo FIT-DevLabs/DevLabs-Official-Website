@@ -23,7 +23,7 @@ function ListComponent({title , items} ){
       <div className="pt-4 flex flex-col w-full items-start">
         {items.map((item,index) =>(
           <div className="flex flex-row pt-[25px]">
-            <div className="flex items-center justify-center"><Image alt = "Bullet" width={7} height = {7}  src="/Ellipse 5.png" ></Image></div>
+            <div className="flex items-center justify-center"><Image alt = "Bullet" width={7} height = {7}  src="/footer/Ellipse 5.png" ></Image></div>
             <div key={index} className="list-none lg:text-xl md:text-base sm:text-sm leading-loose px-3 ">{item}</div>
           </div>
         ))}
@@ -47,31 +47,32 @@ export default function Footer() {
     {
       id:1,
       smlink:"",
-      imfPath:"/social icons/fb.png"
+      imfPath:"/footer/social icons/fb.png"
     },
     {
       id:2,
       smlink:"",
-      imfPath:"/social icons/insta.png"
+      imfPath:"/footer/social icons/insta.png"
     },
     {
       id:3,
       smlink:"",
-      imfPath:"/social icons/Vector.png"
+      imfPath:"/footer/social icons/Vector.png"
     },
     {
       id:4,
       smlink:"",
-      imfPath:"/social icons/linkedIn.png"
+      imfPath:"/footer/social icons/linkedIn.png"
     },
   ]
+  
   
   return (
     <div className="bg-black flex flex-col w-full  font-sans text-white md:px-[50px] px-[30px] lg:pt-[60px] pb-1 lg:rounded-t-[50px] rounded-t-[30px] pt-[30px]">
       <div className="flex lg:flex-row flex-col mb-16">
         <div className="flex flex-col lg:w-1/3 w-full">
           <div>
-          <Image alt ="DevLabs LOGO" width={215} height = {215}  src="/devlabs_logo_new.png"></Image>
+          <Image alt ="DevLabs LOGO" width={215} height = {215}  src="/footer/devlabs_logo_new.png"></Image>
           </div>
           <div>
           <p className="text-sm font-normal text-justify px-8 ">Empowering Businesses with Complete IT Solutions. Discover the Possibilities at DevLabs.
@@ -94,7 +95,7 @@ export default function Footer() {
             <div > <Link href= {item.smlink}><Image src={item.imfPath} alt="social media icon" width = {20} height={20}></Image> </Link></div>
           ))}
       </div>
-      <div><p className="flex justify-center py-6 text-xs">© Copyright 2023 by DevLabs. All Rights Reserved.</p></div>
+      <div><p className="flex justify-center py-2 text-xs">© Copyright 2023 by DevLabs. All Rights Reserved.</p></div>
     </div>
   )
 }
