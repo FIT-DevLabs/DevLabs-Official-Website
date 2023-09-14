@@ -1,25 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 function ListComponent({title , items} ){
   return(
     <div className="font-sans lg:p-4 px-8 flex  flex-col ">
-      {/* <div className="flex flex-col">
-        
-        <div className="lg:text-2xl text-xl">{title}</div>
-        
-        <div className="bg-gradient-to-r from-orange-500 to-black h-1 w-full flex justify-start"></div>
-       
-        
-      </div> */}
       <div className="mb-2">
         <h2 className="lg:text-2xl text-xl relative inline-block pb-1">
           {title}
           <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-black"></div>
         </h2>
       </div>
-      
       <div className="pt-4 flex flex-col w-full items-start">
         {items.map((item,index) =>(
           <div className="flex flex-row pt-[25px]">
@@ -34,9 +24,6 @@ function ListComponent({title , items} ){
     </div>
   )
 }
-
-
-
 export default function Footer() {
 
   const PagesList = ['Home','Services','Work','Blogs','About Us'];
@@ -45,28 +32,19 @@ export default function Footer() {
 
   const SocialMediaLinks = [
     {
-      id:1,
-      smlink:"",
-      imfPath:"/footer/social icons/fb.png"
+      id:1, smlink:"", imfPath:"/footer/social icons/fb.png"
     },
     {
-      id:2,
-      smlink:"",
-      imfPath:"/footer/social icons/insta.png"
+      id:2, smlink:"", imfPath:"/footer/social icons/insta.png"
     },
     {
-      id:3,
-      smlink:"",
-      imfPath:"/footer/social icons/Vector.png"
+      id:3, smlink:"", imfPath:"/footer/social icons/Vector.png"
     },
     {
-      id:4,
-      smlink:"",
-      imfPath:"/footer/social icons/linkedIn.png"
+      id:4, smlink:"", imfPath:"/footer/social icons/linkedIn.png"
     },
   ]
-  
-  
+   
   return (
     <div className="bg-black flex flex-col w-full  font-sans text-white md:px-[50px] px-[30px] lg:pt-[60px] pb-1 lg:rounded-t-[50px] rounded-t-[30px] pt-[30px]">
       <div className="flex lg:flex-row flex-col mb-16">
@@ -79,15 +57,13 @@ export default function Footer() {
              Unleash the potential of technology with our comprehensive software services, ranging from development to seamless integration.
              Your success, our commitment.
           </p>
-          </div>
-          
+          </div> 
         </div>
         <div className="flex flex-row lg:w-3/5 w-full lg:mt-0 mt-8 ">
 
           <div className="flex w-2/5 lg:justify-center"><ListComponent title = 'Pages' items={PagesList}/></div>
           <div className="flex w-3/5 lg:justify-center"><ListComponent title = 'Services' items={ServiceList}/></div>
-        </div>
-        
+        </div> 
       </div>
       <div className="h-[2px] flex justify-center items-center  bg-orange-400 "></div>
       <div className="flex flex-row justify-center lg:justify-normal gap-8 py-8">
