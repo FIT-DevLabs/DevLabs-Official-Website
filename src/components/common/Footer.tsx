@@ -1,20 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from '@/styles/Footer.module.css';
 
-function ListComponent({title , items} ){
+function ListComponent(footerlist:{title:string , items: string[]} ){
   return(
     <div className="font-sans lg:p-4 px-8 flex  flex-col ">
       <div className="mb-2">
         <h2 className="lg:text-2xl text-xl relative inline-block pb-1">
-          {title}
-          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-black"></div>
+          {footerlist.title}
+          <div className={styles.underlineDiv}></div>
+          
         </h2>
       </div>
       <div className="pt-4 flex flex-col w-full items-start">
-        {items.map((item,index) =>(
+        {footerlist.items.map((item) =>(
           <div className="flex flex-row pt-[25px]">
-            <div className="flex items-center justify-center"><Image alt = "Bullet" width={7} height = {7}  src="/footer/Ellipse 5.png" ></Image></div>
-            <div key={index} className="list-none lg:text-xl md:text-base sm:text-sm leading-loose px-3 ">{item}</div>
+            <div className="flex items-center justify-center "><Image alt = "Bullet" width={7} height = {7}  src="/footer/Ellipse 5.png" ></Image></div>
+            <div key={item} className="list-none lg:text-xl md:text-base sm:text-sm leading-loose px-3 ">{item}</div>
           </div>
         ))}
       </div>
@@ -66,9 +68,9 @@ export default function Footer() {
         </div> 
       </div>
       <div className="h-[2px] flex justify-center items-center  bg-orange-400 "></div>
-      <div className="flex flex-row justify-center lg:justify-normal gap-8 py-8">
+      <div className="flex flex-row justify-center lg:justify-normal gap-8 py-8 ">
           {SocialMediaLinks.map((item)=>(
-            <div > <Link href= {item.smlink}><Image src={item.imfPath} alt="social media icon" width = {20} height={20}></Image> </Link></div>
+            <div className="inline-block p-1 rounded-lg transition duration-300 ease-in-out hover:bg-orange-500" > <Link href= {item.smlink}><Image src={item.imfPath} alt="social media icon" width = {20} height={20}></Image> </Link></div>
           ))}
       </div>
       <div><p className="flex justify-center py-2 text-xs">© Copyright 2023 by DevLabs. All Rights Reserved.</p></div>
