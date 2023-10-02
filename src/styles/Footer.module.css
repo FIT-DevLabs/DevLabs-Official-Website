@@ -6,7 +6,7 @@
     background-image: linear-gradient(to right, #FF8200, #000,#FF8200);
     background-size: 300%;
     background-position: left;
-    transition: 300ms background-position ease-in-out;
+    transition: 600ms background-position ease-in-out;
     padding-bottom: 0;
     padding-left: 0;
     width: 100%;
