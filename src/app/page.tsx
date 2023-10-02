@@ -2,34 +2,34 @@
 import React, { useEffect } from "react";
 import "../styles/heroStyles.css";
 import HexagonParticleCanvas from "@/components/home/HexagonParticleCanvas";
-import VANTA from "vanta";
-import { DOTS } from "vanta/dist/vanta.dots.min";
+// import VANTA from "vanta";
+// import { DOTS } from "vanta/dist/vanta.dots.min";
 
 export default function Home() {
-  useEffect(() => {
-    // Initialize the VANTA.DOTS effect
-    const vantaEffect = VANTA.DOTS({
-      el: "#animation-bg",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      scale: 1.0,
-      scaleMobile: 1.0,
-      showLines: false,
-    });
+  // useEffect(() => {
+  //   // Initialize the VANTA.DOTS effect
+  //   const vantaEffect = VANTA.DOTS({
+  //     el: "#animation-bg",
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     gyroControls: false,
+  //     minHeight: 200.0,
+  //     minWidth: 200.0,
+  //     scale: 1.0,
+  //     scaleMobile: 1.0,
+  //     showLines: false,
+  //   });
 
     // Cleanup the VANTA effect when the component unmounts
-    return () => {
-      if (vantaEffect) {
-        vantaEffect.destroy();
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (vantaEffect) {
+  //       vantaEffect.destroy();
+  //     }
+  //   };
+  // }, []);
 
   return (
-    <div>
+    <div className="animation-bg">
       <div className="heroSection">
         <div className="heroSubSection1">
           <h1 className="heroText1">WHERE IDEAS BECOME SOFTWARE</h1>

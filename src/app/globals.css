@@ -24,5 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    color:black;
+  /* SL-051919-20420-05 [Converted] 1 */
+
+  color: black;
 }

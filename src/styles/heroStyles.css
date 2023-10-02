@@ -8,7 +8,6 @@
 }
 
 .heroSection {
-  background-color: black;
   height: 100vh;
   padding-top: 30vh;
 }
@@ -91,6 +90,14 @@
 .heroBtn:hover .arrow {
   color: #ff8e49;
   animation: scaleUp 0.3s ease-in-out;
+}
+
+.animation-bg{
+  background-image: url(../app/background.png);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @keyframes scaleUp {
