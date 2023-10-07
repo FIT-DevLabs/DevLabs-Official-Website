@@ -1,0 +1,79 @@
+@font-face {
+    font-family:"redBold" ;
+    src: url("../fonts/RedHatDisplay-Bold.ttf");
+}
+@font-face {
+    font-family:"redLight";
+    src: url("../fonts/RedHatDisplay-Light.ttf");
+}
+
+.contactDiv{
+    background-color: white;
+    height:100vh;
+}
+
+.contactText1{
+    font-family:"redBold";
+    /* font-size:2.6vw; */
+}
+
+.contactText2{
+    font-family:"redLight";
+    /* font-size:1.3vw; */
+}
+
+.socialIcons{
+    transition-duration: 0.4s;
+}
+
+.socialIcons:hover{
+    scale:1.2;
+    fill:red;
+    cursor: pointer;
+}
+
+.formInput1{
+    border-radius:20px;
+    height:50px;
+    color:black;
+    padding:10px;
+    font-family: "redLight";
+    font-size: 15px;
+    outline: none;
+    border:1px solid #777777;
+}
+
+.formInput1:hover{
+    border:2px solid #FF8E49;
+}
+
+.formInput2{
+    border-radius:20px;
+    height:150px;
+    font-size: 15px;
+    color:black;
+    font-family: "redLight";
+    outline: none;
+    border:1px solid #777777;
+    padding:10px;
+}
+
+.formInput2:hover{
+    border:2px solid #FF8E49;
+}
+
+.formSubmitBtn{
+    background-color: #FF8E49;
+    border-radius: 20px;
+    font-family:"redLight";
+    font-weight: bold;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+
+.formSubmitBtn:hover{
+   scale:1.06;
+}
+
+
+  
