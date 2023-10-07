@@ -32,6 +32,51 @@
   margin-top: 4vh;
 }
 
+@media only screen and (max-width: 900px) {
+  .heroText1 {
+    font-family: "redHat-r";
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: 0.6vw;
+  }
+  
+  .heroText2 {
+    font-family: "redHat-r";
+    text-align: center;
+    color: white;
+    font-size: 2.3vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .heroText1 {
+    font-family: "redHat-r";
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 4.5vw;
+    letter-spacing: 0.6vw;
+  }
+  
+  .heroText2 {
+    font-family: "redHat-r";
+    text-align: center;
+    color: white;
+    font-size: 3.3vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+  }
+}
+
 .heroBtn {
   position: relative;
   display: flex;
