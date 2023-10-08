@@ -1,5 +1,9 @@
+import Services from "@/components/home/ServicesSection"
+
 export default function Home() {
   return (
-    <div>Home Page</div>
+    <div>
+      <Services/>
+    </div>
   )
 }
