@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from "next/image";
 import React from "react";
 import styles from "./Contact.module.css";
@@ -12,6 +12,7 @@ import twitter from "../images/twitter.svg";
 // images
 
 export default function Contact() {
+  
   const onSubmit = () => {
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
