@@ -1,5 +1,6 @@
+'use client';
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Contact.module.css";
 import "tailwindcss";
 
@@ -11,13 +12,25 @@ import twitter from "../images/twitter.svg";
 // images
 
 export default function Contact() {
+  const onSubmit = () => {
+    const nameInput = document.getElementById("name") as HTMLInputElement;
+    const emailInput = document.getElementById("email") as HTMLInputElement;
+    const messageInput = document.getElementById("msg") as HTMLInputElement;
+
+    console.log("Name:", nameInput.value);
+    console.log("Email:", emailInput.value);
+    console.log("Message:", messageInput.value);
+  };
+
   return (
     <div className={styles.contactDiv}>
       <div className="bg-slate-50 h-screen">
         <div className="grid grid-cols-12">
           <div className="col-span-12 md:col-span-6 h-[45vh] md:h-screen">
             <div className="px-10 md:px-14 lg:px-28 mt-28 md:mt-48 lg:mt-64">
-              <span className={`${styles.contactText1} text-gray-900 text-3xl md:text-4xl`}>
+              <span
+                className={`${styles.contactText1} text-gray-900 text-3xl md:text-4xl`}
+              >
                 Get in touch with us!
               </span>
               <p className={`${styles.contactText2} text-gray-500 mt-7`}>
@@ -55,14 +68,32 @@ export default function Contact() {
           </div>
           <div className="col-span-12 md:col-span-6 h-[55vh] md:h-screen ">
             <div className="formDiv text-center px-10 md:p-2 lg:p-12 space-y-10 md:mt-40">
-                <input className={`${styles.formInput1} w-full`} placeholder="Your Full Name"/>
-                <input className={`${styles.formInput1} w-full`} placeholder="Your Email"/>
-                <textarea className={`${styles.formInput2} w-full`} placeholder="Your Message"></textarea>
-                <button className={`${styles.formSubmitBtn} px-10 py-3`}>Submit</button>
+              <input
+                className={`${styles.formInput1} w-full`}
+                placeholder="Your Full Name"
+                id="name"
+              />
+              <input
+                className={`${styles.formInput1} w-full`}
+                placeholder="Your Email"
+                id="email"
+              />
+              <textarea
+                className={`${styles.formInput2} w-full`}
+                placeholder="Your Message"
+                id="msg"
+              ></textarea>
+              <button
+                type="submit"
+                className={`${styles.formSubmitBtn} px-10 py-3`}
+                onClick={onSubmit}
+              >
+                Submit
+              </button>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 }
