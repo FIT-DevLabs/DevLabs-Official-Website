@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "redHat-r";
+  src: url("./fonts/redHat-r.ttf");
+}
+@font-face {
+  font-family: "redHat-b";
+  src: url("./fonts/redHat-b.otf");
+}
+
+.heroSection {
+  height: 100vh;
+  padding-top: 30vh;
+}
+
+.heroText1 {
+  font-family: "redHat-r";
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  font-size: 2.5vw;
+  letter-spacing: 0.6vw;
+}
+
+.heroText2 {
+  font-family: "redHat-r";
+  text-align: center;
+  color: white;
+  font-size: 1.3vw;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .heroText1 {
+    font-family: "redHat-r";
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 3.5vw;
+    letter-spacing: 0.6vw;
+  }
+  
+  .heroText2 {
+    font-family: "redHat-r";
+    text-align: center;
+    color: white;
+    font-size: 2.3vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .heroText1 {
+    font-family: "redHat-r";
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 4.5vw;
+    letter-spacing: 0.6vw;
+  }
+  
+  .heroText2 {
+    font-family: "redHat-r";
+    text-align: center;
+    color: white;
+    font-size: 3.3vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+  }
+}
+
+.heroBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #ff8e49;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  width:180px;
+  height:65px;
+}
+
+.heroBtn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.heroBtn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.heroBtn span {
+  text-align: center;
+  text-decoration: none;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+.heroBtn .arrow {
+    color:white;
+    font-weight: bolder;
+}
+
+.heroBtn:hover span {
+  color: #ff8e49;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.heroBtn:hover .arrow {
+  color: #ff8e49;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.animation-bg{
+  background-image: url(../app/background.png);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
