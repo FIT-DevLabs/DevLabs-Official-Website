@@ -1,4 +1,4 @@
-import Services from "@/components/home/ServicesSection"
+import Services from "@/components/home/servicesSection/ServicesSection"
 
 export default function Home() {
   return (

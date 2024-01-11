@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Button from "../common/Button"
+import Button from "../../common/Button"
 import ListofServices from "./ListofServices";
 
 interface Service {

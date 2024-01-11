@@ -12,5 +12,4 @@ const ListofServices = [
         id:4,title:"Data Science, AI and ML Service",path:"/Images/services/Icon1.png"
     },
 ]
-
 export default ListofServices;
