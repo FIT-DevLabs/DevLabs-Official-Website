@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { useEffect } from "react"
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/common/NavBar'
 import Footer from '@/components/common/Footer'

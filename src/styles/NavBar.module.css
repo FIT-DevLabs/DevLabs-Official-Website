@@ -1,0 +1,22 @@
+.navbar_outer {
+  @apply max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4;
+}
+.logo_link {
+  @apply flex items-center;
+}
+.logo_image {
+  @apply mr-3 h-36;
+}
+.hamburger_btn {
+  @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 lg:hidden;
+}
+.navbar_ul {
+  @apply font-medium flex flex-col lg:flex-row p-4 lg:p-0 lg:space-x-8 mt-0 items-end w-auto;
+}
+.ul_list_item {
+  @apply block py-2 pl-3 lg:pr-4 lg:border-b-[0.75px] lg:border-b-black transition duration-500 lg:hover:border-b lg:hover:border-b-[#e48f5b]
+  text-white;
+}
+.contact_btn {
+  @apply block py-2 pl-5 pr-5 bg-[#ff7723] rounded-lg;
+}
