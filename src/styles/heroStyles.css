@@ -138,11 +138,7 @@
 }
 
 .animation-bg{
-  background-image: url(../app/background.png);
-  background-size: cover;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: black;
 }
 
 @keyframes scaleUp {

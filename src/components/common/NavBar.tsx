@@ -15,7 +15,7 @@ const NavBar: React.FC<NavBarProps> = () => {
   };
 
   return (
-    <nav>
+    <nav style={{backgroundColor: "black"}}>
       <div className={styles.navbar_outer}>
         <a href="#" className={styles.logo_link}>
           <img
