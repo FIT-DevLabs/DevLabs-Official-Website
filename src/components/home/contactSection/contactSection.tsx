@@ -4,11 +4,15 @@ import Image from "next/image";
 import React from "react";
 import styles from "@/styles/contact.module.css";
 
-import {facebookIcon, instagramIcon, linkedinIcon, twitterIcon} from "@/components/home/contactSection/icon"
+import {
+  facebookIcon,
+  instagramIcon,
+  linkedinIcon,
+  twitterIcon,
+} from "@/components/home/contactSection/icon";
 
 export default function Contact() {
-  
-  const onSubmit = () => {
+  const onSubmit = async () => {
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
     const messageInput = document.getElementById("msg") as HTMLInputElement;
