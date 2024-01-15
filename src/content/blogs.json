@@ -1,0 +1,32 @@
+
+
+{"blogs" : [
+    {
+        "id": 1,
+        "title": "Blog 1",
+        "date": "2021-10-10",
+        "owner": "Owner 1",
+        "url": "https://images.unsplash.com/photo-1634163566307-5c9a2c3b2e5b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHwxNjM0MjM5NjY5&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 2,
+        "title": "Blog 2",
+        "date": "2021-10-10",
+        "owner": "Owner 2",
+        "url": "https://images.unsplash.com/photo-1634163566307-5c9a2c3b2e5b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHwxNjM0MjM5NjY5&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 3,
+        "title": "Blog 3",
+        "date": "2021-10-10",
+        "owner": "Owner 3",
+        "url": "https://images.unsplash.com/photo-1634163566307-5c9a2c3b2e5b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHwxNjM0MjM5NjY5&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": 4,
+        "title": "Blog 4",
+        "date": "2021-10-10",
+        "owner": "Owner 4",
+        "url": "https://images.unsplash.com/photo-1634163566307-5c9a2c3b2e5b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHwxNjM0MjM5NjY5&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    }
+]}
