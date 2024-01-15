@@ -3,16 +3,17 @@
 import React, { useEffect } from "react";
 import "../styles/heroStyles.css";
 import HeroSection from "@/components/home/HeroSection";
-import Services from "@/components/home/servicesSection/ServicesSection"
+import Services from "@/components/home/servicesSection/ServicesSection";
 import Contact from "@/components/home/contactSection/contactSection";
+import StorySection from "@/components/home/StorySection";
 
 export default function Home() {
-
   return (
-    <div> 
+    <div>
       <HeroSection />
-      <Services/>
-      <Contact/>
+      <Services />
+      <StorySection />
+      <Contact />
     </div>
-  )
+  );
 }
