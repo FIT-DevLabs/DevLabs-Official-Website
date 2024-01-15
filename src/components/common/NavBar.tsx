@@ -3,11 +3,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "@/styles/NavBar.module.css";
 
-interface NavBarProps {
-  // Define any props here
-}
-
-const NavBar: React.FC<NavBarProps> = () => {
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const toggleMenu = () => {
@@ -15,7 +11,7 @@ const NavBar: React.FC<NavBarProps> = () => {
   };
 
   return (
-    <nav style={{backgroundColor: "black"}}>
+    <nav style={{ backgroundColor: "black" }}>
       <div className={styles.navbar_outer}>
         <a href="#" className={styles.logo_link}>
           <img
