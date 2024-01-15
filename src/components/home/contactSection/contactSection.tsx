@@ -12,6 +12,7 @@ import {
 } from "@/components/home/contactSection/icon";
 
 export default function Contact() {
+  // const api_loc=require("../contactSection/api/api_four");
   const onSubmit = async () => {
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
@@ -20,6 +21,30 @@ export default function Contact() {
     console.log("Name:", nameInput.value);
     console.log("Email:", emailInput.value);
     console.log("Message:", messageInput.value);
+
+    try {
+      const response = await fetch("/api/api_four", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          subject: "Your Subject",
+          toEmail: "dinulperera2001@gmail.com",
+          otpText: `Name: ${nameInput.value}\nEmail: ${emailInput.value}\nMessage: ${messageInput.value}`,
+        }),
+      });
+
+      console.log(response);
+
+      if (response.ok) {
+        console.log("Email Sent Successfully");
+      } else {
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (
