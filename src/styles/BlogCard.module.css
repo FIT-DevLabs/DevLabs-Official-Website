@@ -1,5 +1,5 @@
 .Blog_card_outer{
-    @apply flex flex-col w-11/12 sm:h-[45vh] md:w-[300px] md:h-[400px] lg:w-[300px] bg-gray-100  text-black rounded-3xl mx-5 relative ;
+    @apply  flex flex-col w-11/12 sm:h-[45vh] md:w-[300px] md:h-[400px] lg:w-[300px] bg-gray-100  text-black rounded-3xl mx-5 relative ;
 }
 
 .Blog_card_image{
@@ -9,13 +9,13 @@
     @apply p-4 font-thin text-[15px]
 }
 .Blog_title{
-    @apply font-bold font-mono text-left text-[22px] px-4 ;
+    @apply font-bold text-left text-[18px] px-4 ;
 }
 .Blog_owner{
-    @apply font-mono text-[15px] text-gray-400 px-4;
+    @apply text-[15px] text-gray-400 px-4;
 }
 .Blog_read_button{
-    @apply   flex flex-row  border-none border-orange-500 hover:bg-gray-100 text-orange-500  text-[16px] font-thin py-2 px-4 rounded-xl font-mono lg:absolute bottom-2 right-3 gap-2 ;
+    @apply flex flex-row border-none border-orange-500 hover:bg-gray-100 text-orange-500 text-[16px] font-thin py-2 px-4 rounded-xl lg:absolute bottom-2 right-3 gap-2 ;
 }
 .example{
     @apply max-w-screen-sm mx-auto overflow-hidden;

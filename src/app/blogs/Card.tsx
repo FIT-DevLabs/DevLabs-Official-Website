@@ -31,14 +31,14 @@ export default function Card({
   readonly date: string;
   readonly owner: string;
   readonly title: string;
-  readonly url: URL;
+  readonly url: string;
 }) {
   const { loading, error } = useFetch(
     "http://localhost:1337/api/blogs?populate=*"
   );
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error!</p>;
-  const Lasturl = "http://localhost:1337" + url;
+  const Lasturl = url;
 
 
   return (

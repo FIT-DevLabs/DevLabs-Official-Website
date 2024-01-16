@@ -4,6 +4,7 @@ import React from "react";
 import styles from "@/styles/BlogCard.module.css";
 import useFetch from "./useFetch";
 import "../../styles/hideScrollbar.css";
+import Blogs from "@/content/blogs.json"
 
 import {
   ScrollMenu,
@@ -56,7 +57,7 @@ function BlogCard() {
             options={{ throttle: 0 }}
             onMouseMove={handleDrag}
           >
-            {items.map(
+            {/* {items.map(
               (blog: {
                 id: number;
                 attributes: {
@@ -84,6 +85,27 @@ function BlogCard() {
                   Id={blog.id}
                   url={
                     blog.attributes.image.data.attributes.formats.thumbnail.url
+                  }
+                />
+              )
+            )} */}
+            {Blogs.blogs.map(
+              (blog: {
+                id: number;
+                title:string;
+                owner:string;
+                date:string;
+                url:string;
+                    }
+              ) => (
+                <Card
+                  title={blog.title}
+                  date={blog.date}
+                  key={blog.id}
+                  owner={blog.owner}
+                  Id={blog.id}
+                  url={
+                    blog.url
                   }
                 />
               )
