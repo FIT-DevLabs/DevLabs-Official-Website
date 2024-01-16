@@ -23,7 +23,7 @@ export default function Contact() {
     console.log("Message:", messageInput.value);
 
     try {
-      const response = await fetch("/api/api_four", {
+      const response = await fetch("../contactSection/api/api_four", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
