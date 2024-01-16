@@ -1,0 +1,6 @@
+.carousel_outer {
+  @apply overflow-hidden relative;
+}
+.carousel_inner {
+  @apply flex transition ease-out duration-60 w-screen h-auto;
+}
