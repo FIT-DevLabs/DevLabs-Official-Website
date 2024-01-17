@@ -1,0 +1,22 @@
+.Blog_card_outer {
+  @apply flex flex-col  h-[50vh] w-60 sm:h-[45vh] md:w-[300px] md:h-[400px] lg:w-[300px] bg-gray-100  text-black rounded-3xl mx-5 relative;
+}
+
+.Blog_card_image {
+  @apply rounded-t-3xl max-w-full max-h-[50vh] overflow-hidden;
+}
+.Blog_date {
+  @apply p-4 font-thin text-[15px];
+}
+.Blog_title {
+  @apply font-bold text-left text-[18px] px-4;
+}
+.Blog_owner {
+  @apply text-[15px] text-gray-400 px-4;
+}
+.Blog_read_button {
+  @apply flex flex-row border-none border-orange-500 hover:bg-gray-100 text-orange-500 text-[16px] font-thin py-2 px-4 rounded-xl lg:absolute bottom-2 right-3 gap-2;
+}
+.example {
+  @apply max-w-screen-sm mx-auto overflow-hidden;
+}
