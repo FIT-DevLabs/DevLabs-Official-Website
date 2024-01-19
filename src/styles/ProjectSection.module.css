@@ -1,0 +1,52 @@
+.Blog_Outer {
+  @apply flex flex-col-reverse  md:h-[800px] max-w-full lg:h-[600px]  lg:mt-6 justify-center sm:justify-evenly bg-white text-black rounded-[60px] shadow-lg py-12 md:py-5  lg:flex-row;
+}
+
+.Blog_left {
+  @apply sm:flex sm:flex-col justify-center md:my-10  sm:border-gray-400 pl-7 sm:pr-10 relative lg:max-w-lg lg:border-l-2 lg:pr-10;
+}
+
+.Our_Blogs {
+  @apply font-semibold text-[40px];
+}
+
+.intro {
+  @apply text-justify font-[400] text-[20px] text-base py-5 md:my-0;
+}
+
+.Blog_right {
+  @apply flex  md:max-w-full lg:max-w-[1500px] md:flex-col lg:flex-row py-12 overflow-hidden;
+}
+
+.Blog_button {
+  @apply gap-3 justify-center lg:ml-64 hidden lg:flex flex-row  sm:w-6/12 md:w-8/12 lg:w-[13vw] bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 px-4 rounded-3xl my-7;
+}
+.Blog_section {
+  @apply bg-gradient-to-l  from-orange-500 to-black rounded-[60px] py-12 sm:py-5 sm:h-screen md:h-[900px] mt-4  md:flex-col lg:flex-row shadow-none;
+}
+.Blog_button_2 {
+  @apply justify-start flex gap-3 w-[190px] ml-20 md:ml-72 lg:hidden md:w-3/12 bg-orange-500 hover:bg-orange-400 text-white font-semibold rounded-3xl py-2 px-3;
+}
+
+.project_card_outer {
+  @apply flex flex-col md:flex-row h-[60vh] w-[340px] sm:h-[45vh] md:w-[700px] md:h-[400px] lg:w-[730px] bg-gray-100  text-black rounded-3xl mx-5 relative;
+}
+.project_card_image {
+  @apply rounded-t-3xl max-w-full max-h-[50vh] overflow-hidden;
+}
+.project_disc {
+  @apply flex align-middle flex-col px-5 sm:pt-20 gap-6;
+}
+.project_name {
+  @apply font-semibold text-left text-[35px];
+}
+.project_discription {
+  @apply font-thin text-[15px];
+}
+.project_read_button {
+  @apply flex flex-row w-1/2 font-semibold justify-center py-4 text-black border border-black  rounded-3xl;
+}
+
+.project_image {
+  @apply flex align-middle rounded-3xl overflow-auto  m-4;
+}

@@ -20,3 +20,6 @@
 .example {
   @apply max-w-screen-sm mx-auto overflow-hidden;
 }
+.example_2 {
+  @apply max-w-3xl lg:max-w-screen-md mx-auto overflow-hidden;
+}
