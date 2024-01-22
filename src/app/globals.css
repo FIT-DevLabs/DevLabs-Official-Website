@@ -16,6 +16,15 @@
   }
 }
 
+@font-face {
+  font-family: "redHat-r";
+  src: url("../styles/fonts/redHat-r.ttf");
+}
+
+@font-face {
+  font-family: "redHat-b";
+  src: url("../styles/fonts/redHat-b.otf");
+}
 
 /* body {
   color: rgb(var(--foreground-rgb));

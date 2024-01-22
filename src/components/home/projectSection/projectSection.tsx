@@ -31,6 +31,8 @@ function projectSection() {
   //   const { loading, error } = useFetch("http://localhost:1337/api/blogs");
   const sectionRef = useRef<HTMLDivElement>(null);
 
+  
+
   useEffect(() => {
     const handleWheel = (event: WheelEvent) => {
       if (sectionRef.current?.contains(event.target as Node)) {
@@ -48,7 +50,7 @@ function projectSection() {
   //   if (error) return <p>Error!</p>;
 
   return (
-    <div className={`${redhat.className} ${styles.Blog_section}`}>
+    <div id="projectsection" className={`${redhat.className} ${styles.Blog_section} `}>
       <div className={styles.Blog_Outer}>
         <div className={styles.Blog_right} ref={sectionRef}>
           <ProjectCard />
@@ -63,7 +65,7 @@ function projectSection() {
           <button className={styles.Blog_button}>
             View all projects{brokenArrow}
           </button>
-          <button className={styles.Blog_button_2}>
+          <button className={styles.Blog_button_2} >
             View all projects{brokenArrow}
           </button>
         </div>

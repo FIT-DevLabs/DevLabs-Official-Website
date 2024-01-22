@@ -4,6 +4,7 @@ import React from "react";
 import styles from "@/styles/Button.module.css";
 
 interface BottonProps {
+  navigate?: string
   link: string;
   click?: () => void;
   color?: string;
@@ -147,7 +148,7 @@ export default function Button({ ...props }: BottonProps) {
   return (
     <div className={styles.Button_Wrapper}>
       <button className={className} onClick={props.click}>
-        <a href={props.link} className={styles.tag}>
+        <a href={props.navigate} className={styles.tag}>
           {props.link}
           {icon}
         </a>

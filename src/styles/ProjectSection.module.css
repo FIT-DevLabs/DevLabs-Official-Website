@@ -1,5 +1,5 @@
 .Blog_Outer {
-  @apply flex flex-col-reverse  md:h-[800px] max-w-full lg:h-[600px]  lg:mt-6 justify-center sm:justify-evenly bg-white text-black rounded-[60px] shadow-lg py-12 md:py-5  lg:flex-row;
+  @apply flex flex-col-reverse  md:h-[800px] max-w-full lg:h-[540px]  lg:mt-6 justify-center sm:justify-evenly bg-white text-black rounded-[60px] shadow-lg py-12 md:py-5  lg:flex-row;
 }
 
 .Blog_left {
@@ -22,7 +22,7 @@
   @apply gap-3 justify-center lg:ml-64 hidden lg:flex flex-row  sm:w-6/12 md:w-8/12 lg:w-[13vw] bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 px-4 rounded-3xl my-7;
 }
 .Blog_section {
-  @apply bg-gradient-to-l  from-orange-500 to-black rounded-[60px] py-12 sm:py-5 sm:h-screen md:h-[900px] mt-4  md:flex-col lg:flex-row shadow-none;
+  @apply bg-gradient-to-l  from-orange-500 to-black rounded-[60px] py-12 sm:py-5 sm:h-screen md:h-[900px] lg:h-[650px] mt-11  md:flex-col lg:flex-row shadow-none;
 }
 .Blog_button_2 {
   @apply justify-start flex gap-3 w-[190px] ml-20 md:ml-72 lg:hidden md:w-3/12 bg-orange-500 hover:bg-orange-400 text-white font-semibold rounded-3xl py-2 px-3;

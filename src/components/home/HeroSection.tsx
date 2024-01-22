@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import DOTS from "vanta/src/vanta.dots";
+import Button from "../common/Button";
 
 const HeroSection = () => {
   useEffect(() => {
@@ -21,9 +22,18 @@ const HeroSection = () => {
     });
   }, []);
 
+  const scrollVertically = (e: any) => {
+    e.preventDefault();
+    window.scroll({
+      top: 700,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
-    <div className="animation-bg ">
-      <div id="herobg" className="heroSection">
+    <div className="animation-bg z-30">
+      <div id="herobg" className="heroSection flex flex-1 justify-center">
         <div className="heroSubSection1">
           <h1 className="heroText1">WHERE IDEAS BECOME SOFTWARE</h1>
           <p className="heroText2">
@@ -31,9 +41,15 @@ const HeroSection = () => {
             functional software solutions. Join us in shaping a digital future
             that transforms concepts into reality.
           </p>
-          <button className="heroBtn">
-            <span>Discover</span>
-          </button>
+          <div className="flex justify-center m-5">
+            <Button
+              navigate="#services"
+              link="Discover"
+              color="orange"
+              iconName="arrow"
+              click={() => scrollVertically({ preventDefault: () => {} })}
+            />
+          </div>
         </div>
       </div>
     </div>

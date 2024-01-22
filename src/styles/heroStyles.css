@@ -2,14 +2,29 @@
   font-family: "redHat-r";
   src: url("./fonts/redHat-r.ttf");
 }
+
 @font-face {
   font-family: "redHat-b";
   src: url("./fonts/redHat-b.otf");
 }
 
+.animation-bg {
+  border-radius: 0 0 90px 90px;
+  height: 100vh;
+  max-height: 700px;
+}
+
 .heroSection {
   height: 100vh;
+  max-height: 700px;
   padding-top: 30vh;
+  border-radius: 0 0 50px 50px;
+}
+
+.vanta-canvas {
+  border-radius: 0 0 90px 90px;
+  height: 100vh;
+  max-height: 700px;
 }
 
 .heroText1 {
@@ -41,7 +56,15 @@
     font-size: 3.5vw;
     letter-spacing: 0.6vw;
   }
-  
+
+  .animation-bg {
+    border-radius: 0 0 70px 70px;
+  }
+
+  .vanta-canvas {
+    border-radius: 0 0 70px 70px;
+  }
+
   .heroText2 {
     font-family: "redHat-r";
     text-align: center;
@@ -64,7 +87,15 @@
     font-size: 4.5vw;
     letter-spacing: 0.6vw;
   }
-  
+
+  .animation-bg {
+    border-radius: 0 0 50px 50px;
+  }
+
+  .vanta-canvas {
+    border-radius: 0 0 50px 50px;
+  }
+
   .heroText2 {
     font-family: "redHat-r";
     text-align: center;
@@ -91,8 +122,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 6vh;
-  width:180px;
-  height:65px;
+  width: 180px;
+  height: 65px;
 }
 
 .heroBtn:after {
@@ -122,9 +153,10 @@
   z-index: 20;
   transition: all 0.3s ease-in-out;
 }
+
 .heroBtn .arrow {
-    color:white;
-    font-weight: bolder;
+  color: white;
+  font-weight: bolder;
 }
 
 .heroBtn:hover span {
@@ -137,7 +169,7 @@
   animation: scaleUp 0.3s ease-in-out;
 }
 
-.animation-bg{
+.animation-bg {
   background-color: black;
 }
 

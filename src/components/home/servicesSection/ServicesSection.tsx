@@ -15,7 +15,7 @@ interface ServiceElementProps {
 function ServiceElement({ items }: ServiceElementProps) {
   return (
     <div className="flex flex-wrap ">
-      {items.map((item,index) => (
+      {items.map((item, index) => (
         <div key={index} className="flex flex-row  sm:w-1/2 w-full h-[115px] lg:h-[180px] lg:px-[20px] px-[10px] sm:py-[10px] py-[5px] ">
           <div className="flex items-center justify-center bg-gray-100 w-full rounded-2xl ">
             <div className="w-1/3 lg:px-8 px-6">
@@ -37,7 +37,7 @@ function ServiceElement({ items }: ServiceElementProps) {
 export default function Services() {
 
   return (
-    <div className="lg:mx-[100px] sm:mx-[50px] mx-[10px] flex flex-col rounded-t-[60px] bg-white">
+    <div id="#services" className="lg:mx-[100px] sm:mx-[50px] mx-[10px] flex flex-col rounded-t-[60px] bg-white shadow-2xl mt-[-50px] z-40 relative">
       <div className="mt-[70px] lg:mx-[70px] sm:mx-[50px] mx-[30px]">
         <h1 className="lg:text-[40px] sm:text-[32px] text-[17px] font-semibold">Our services and expertise</h1>
         <p className="lg:font-[20px] sm:text-[16px] text-[12px] text-gray-500">Offering a broad set of capabilities under one roof makes us a versatile partner to meet all your digital ambitions.</p>
@@ -47,10 +47,9 @@ export default function Services() {
           <ServiceElement items={ListofServices} />
         </div>
       </div>
-      <div className="flex items-center justify-center pt-2">
-        <Button iconName="" color="orange" link="See more" />
+      <div className="flex items-center justify-center pt-2 mb-10">
+        <Button navigate="/services" iconName="arrow" color="orange" link="See more" />
       </div>
-
     </div>
   )
 }

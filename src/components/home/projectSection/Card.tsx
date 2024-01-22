@@ -51,7 +51,7 @@ export default function Card({
         <div className ={styles.project_description}>
           {description}
         </div>
-        <button className={styles.project_read_button}>See More</button>
+        <button className={styles.project_read_button} >See More</button>
       </div>
     </div>
   );

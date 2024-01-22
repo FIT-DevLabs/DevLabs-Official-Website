@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function StorySectionCarousel() {
   const slides: string[] = [
-    "carousel_1.jpg",
-    "carousel_2.jpeg",
-    "carousel_3.jpg",
-    "carousel_4.jpg",
+    "facultyPic1.jpg",
+    "facultyPic1.jpg",
+    "facultyPic1.jpg",
+    "facultyPic1.jpg",
   ];
   let [current, setCurrent] = useState(0);
 
@@ -24,19 +24,20 @@ export default function StorySectionCarousel() {
   return (
     <div className="overflow-hidden relative">
       <div
-        className="flex transition ease-out duration-60 w-screen h-auto"
+        className="flex transition ease-out duration-60 w-screen relative"
         style={{
           transform: `translateX(-${current * 100}%)`,
         }}
       >
         {slides.map((imageName, index) => (
-          <img
+          <Image
             key={index}
             src={"/story_section/carousel_images/" + imageName}
             alt={`Image ${index}`}
-            width="100%"
-            height="100%"
-            className=""
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ minWidth: "100%", height: "auto" }}
           />
         ))}
       </div>

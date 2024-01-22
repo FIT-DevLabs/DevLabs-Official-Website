@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "redHat-r";
+  src: url("./fonts/redHat-r.ttf");
+}
+
+@font-face {
+  font-family: "redHat-b";
+  src: url("./fonts/redHat-b.otf");
+}
+
 .nav {
-  @apply bg-black p-4 relative;
+  @apply bg-black p-4 relative flex flex-1 items-center justify-center;
 }
 .navbar_outer {
-  @apply container mx-auto flex items-center justify-between lg:mt-16;
+  @apply container mx-auto flex items-center justify-between md:mt-5;
 }
 .logo_link {
   @apply flex items-center;
@@ -21,12 +31,15 @@
 }
 .contact_btn {
   @apply block lg:py-2 lg:pl-5 lg:pr-5 lg:bg-[#ff7723] rounded-lg text-white;
+  font-family: "redHat-b";
 }
 .mobile_nav_item {
   @apply block mb-2 border-b-[0.75px] transition duration-500 hover:border-b border-black hover:border-b-[#e48f5b] text-cyan-50 w-fit justify-end;
+  font-family: "redHat-b";
 }
 .mobile_menu {
   @apply lg:hidden bg-black p-4 fixed top-4 right-0 z-50 text-end;
+  font-family: "redHat-b";
 }
 .mobile_menu_close_btn {
   @apply absolute top-2 right-2 z-50;
@@ -38,7 +51,7 @@
   @apply flex justify-end;
 }
 .nav_logo {
-  @apply flex items-center;
+  @apply flex items-center md:ml-10 ml-5;
 }
 .col_add_btn {
   @apply flex items-center;
@@ -47,5 +60,5 @@
   @apply lg:hidden text-black mr-4;
 }
 .contact_btn_outer {
-  @apply ml-auto hidden lg:block;
+  @apply md:mr-10 hidden lg:block ;
 }
