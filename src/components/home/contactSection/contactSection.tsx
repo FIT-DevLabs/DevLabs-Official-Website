@@ -4,10 +4,10 @@ import Image from "next/image";
 import React from "react";
 import styles from "@/styles/contact.module.css";
 
-import {facebookIcon, instagramIcon, linkedinIcon, twitterIcon} from "@/components/home/contactSection/icon"
+import { facebookIcon, instagramIcon, linkedinIcon, twitterIcon } from "@/components/home/contactSection/icon"
 
 export default function Contact() {
-  
+
   const onSubmit = () => {
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
@@ -19,11 +19,11 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.contactDiv}>
-      <div className="bg-slate-50 h-screen">
+    <div id="contactus" className='bg-white w-screen flex items-center justify-center relative sm:mt-6 mb-10 rounded'>
+      <div className="bg-white w-4/5 rounded-t-[90px] lg:mt-[-100px] md:mt-[-100px] mt-[-30px] shadow-2xl">
         <div className="grid grid-cols-12">
-          <div className="col-span-12 md:col-span-6 h-[45vh] md:h-screen">
-            <div className="px-10 md:px-14 lg:px-28 mt-28 md:mt-48 lg:mt-64">
+          <div className="col-span-12 md:col-span-6 ">
+            <div className="px-10 md:px-14 lg:px-28 mt-20 md:mt-20 lg:mt-30">
               <span
                 className={`${styles.contactText1} text-gray-900 text-3xl md:text-4xl`}
               >
@@ -34,13 +34,12 @@ export default function Contact() {
                 will get back to you as soon as possible.
               </p>
               <div className={`${styles.socialMediaIcons} mt-10`}>
-                <div className="flex justify-start gap-8 sm:gap-14">
+                <div className="flex justify-start gap-8 md:gap-5 sm:gap-12">
                   <Image
                     src={facebookIcon}
                     alt="Facebook Logo"
-                    className={`${styles.socialIcons} w-6 sm:w-10`}
+                    className={`${styles.socialIcons} w-5 sm:w-10 `}
                   />
-
                   <Image
                     src={twitterIcon}
                     alt="Twitter Logo"
@@ -62,26 +61,26 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-span-12 md:col-span-6 h-[55vh] md:h-screen ">
-            <div className="formDiv text-center px-10 md:p-2 lg:p-12 space-y-10 md:mt-40">
+          <div className="col-span-12 md:col-span-6">
+            <div className="formDiv text-center px-10 md:px-14 lg:px-28 mt-10 md:mt-20 lg:mt-30">
               <input
-                className={`${styles.formInput1} w-full`}
+                className={`${styles.formInput1} w-full mt-2`}
                 placeholder="Your Full Name"
                 id="name"
               />
               <input
-                className={`${styles.formInput1} w-full`}
+                className={`${styles.formInput1} w-full mt-2`}
                 placeholder="Your Email"
                 id="email"
               />
               <textarea
-                className={`${styles.formInput2} w-full`}
+                className={`${styles.formInput2} w-full mt-2`}
                 placeholder="Your Message"
                 id="msg"
               ></textarea>
               <button
                 type="submit"
-                className={`${styles.formSubmitBtn} px-10 py-3`}
+                className={`${styles.formSubmitBtn} px-10 py-3 mb-10 md:mt-5`}
                 onClick={onSubmit}
               >
                 Submit

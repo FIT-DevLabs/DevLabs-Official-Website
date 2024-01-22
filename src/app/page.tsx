@@ -11,11 +11,11 @@ import ProjectSection from '@/components/home/projectSection/projectSection'
 
 export default function Home() {
   return (
-    <div>
+    <div style={{overflowX:"hidden"}}>
       <HeroSection />
       <Services />
-      <ProjectSection />
       <StorySection />
+      <ProjectSection />
       <BlogSection />
       <Contact />
     </div>
