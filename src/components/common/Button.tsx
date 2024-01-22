@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import styles from "@/styles/Button.module.css";
@@ -132,10 +132,10 @@ export default function Button({ ...props }: BottonProps) {
       icon = arrowgray;
       break;
     case "broken-arrow-gray":
-      icon=brokenArrowgray;
+      icon = brokenArrowgray;
       break;
     case "send-icon-gray":
-      icon=sendIconGray;
+      icon = sendIconGray;
   }
   switch (props.color) {
     case "orange":
