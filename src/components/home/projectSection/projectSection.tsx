@@ -1,15 +1,15 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import styles from "@/styles/BlogSection.module.css";
-import BlogCard from "./BlogCard";
+import styles from "@/styles/ProjectSection.module.css";
 import useFetch from "@/app/blogs/useFetch";
-import { Inter ,Red_Hat_Display} from '@next/font/google';
+import { Inter, Red_Hat_Display } from "@next/font/google";
+import ProjectCard from "./projectCards";
 
 const redhat = Red_Hat_Display({
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
 
-function BlogSection() {
+function projectSection() {
   const brokenArrow: any = (
     <svg
       width="20px"
@@ -27,7 +27,8 @@ function BlogSection() {
       />
     </svg>
   );
-  
+
+  //   const { loading, error } = useFetch("http://localhost:1337/api/blogs");
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,33 +44,32 @@ function BlogSection() {
       document.removeEventListener("wheel", handleWheel);
     };
   }, []);
+  //   if (loading) return <p>Loading...</p>;
+  //   if (error) return <p>Error!</p>;
+
   return (
     <div className={`${redhat.className} ${styles.Blog_section}`}>
       <div className={styles.Blog_Outer}>
+        <div className={styles.Blog_right} ref={sectionRef}>
+          <ProjectCard />
+        </div>
         <div className={styles.Blog_left}>
-          <h1 className={styles.Our_Blogs}>Our Blogs</h1>
+          <h1 className={styles.Our_Blogs}>Our Projects</h1>
           <p className={styles.intro}>
-            Uncover Insights, Tutorials, and Industry Trends on the DevLabs
-            Company Website Blog. Join us in a journey through in-depth
-            articles, practical tutorials, and thought-provoking discussions as
-            we delve into the latest advancements, coding intricacies, and
-            software development strategies. Our blog is your gateway to staying
-            informed and inspired in the dynamic realm of technology and
-            innovation
+            Discover our innovative projects that showcase the intersection of
+            creativity and technology. Explore how we're shaping industries and
+            pushing boundaries through our transformative solutions.
           </p>
           <button className={styles.Blog_button}>
-            Read more blogs{brokenArrow}
+            View all projects{brokenArrow}
+          </button>
+          <button className={styles.Blog_button_2}>
+            View all projects{brokenArrow}
           </button>
         </div>
-        <div className={styles.Blog_right} ref={sectionRef}>
-          <BlogCard />
-        </div>
-        <button className={styles.Blog_button_2}>
-          Read more blogs{brokenArrow}
-        </button>
       </div>
     </div>
   );
 }
 
-export default BlogSection;
+export default projectSection;

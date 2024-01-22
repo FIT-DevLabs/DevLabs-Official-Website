@@ -3,8 +3,8 @@
 import React from "react";
 import styles from "@/styles/BlogCard.module.css";
 import useFetch from "./useFetch";
-import "../../styles/hideScrollbar.css";
-import Blogs from "@/content/blogs.json"
+import "@/styles/hideScrollbar.css";
+import Projects from "@/content/projects.json"
 
 import {
   ScrollMenu,
@@ -18,7 +18,7 @@ import Card from "./Card";
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
-function BlogCard() {
+function ProjectCard() {
   const { dragStart, dragStop, dragMove } = useDrag();
 
   const handleDrag =
@@ -29,9 +29,17 @@ function BlogCard() {
           scrollContainer.current.scrollLeft += posDiff;
         }
       });
+
+//   const { items, loading, error } = useFetch(
+//     "http://localhost:1337/api/blogs?populate=*"
+//   );
+
+//   if (loading) return <p>Loading...</p>;
+//   if (error) return <p>Error!</p>;
+//   console.log(items);
   return (
     <div>
-      <div className={styles.example}>
+      <div className={styles.example_2}>
         <div>
           <ScrollMenu
             onWheel={onWheel}
@@ -49,23 +57,21 @@ function BlogCard() {
             options={{ throttle: 0 }}
             onMouseMove={handleDrag}
           >
-            {Blogs.blogs.map(
-              (blog: {
+            {Projects.projects.map(
+              (project: {
                 id: number;
-                title:string;
-                owner:string;
-                date:string;
+                name:string;
+                description:string;
                 url:string;
                     }
               ) => (
                 <Card
-                  title={blog.title}
-                  date={blog.date}
-                  key={blog.id}
-                  owner={blog.owner}
-                  Id={blog.id}
+                  name={project.name}
+                  key={project.id}
+                  Id={project.id}
+                  description={project.description}
                   url={
-                    blog.url
+                    project.url
                   }
                 />
               )
@@ -77,7 +83,7 @@ function BlogCard() {
   );
 }
 
-export default BlogCard;
+export default ProjectCard;
 
 function onWheel(
   { getItemById, items, visibleItems, scrollToItem }: scrollVisibilityApiType,

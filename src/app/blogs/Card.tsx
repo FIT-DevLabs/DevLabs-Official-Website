@@ -33,11 +33,6 @@ export default function Card({
   readonly title: string;
   readonly url: string;
 }) {
-  const { loading, error } = useFetch(
-    "http://localhost:1337/api/blogs?populate=*"
-  );
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
   const Lasturl = url;
 
 
