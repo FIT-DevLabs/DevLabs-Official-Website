@@ -29,14 +29,6 @@ function BlogCard() {
           scrollContainer.current.scrollLeft += posDiff;
         }
       });
-
-  const { items, loading, error } = useFetch(
-    "http://localhost:1337/api/blogs?populate=*"
-  );
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
-  console.log(items);
   return (
     <div>
       <div className={styles.example}>

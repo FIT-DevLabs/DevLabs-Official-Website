@@ -28,7 +28,6 @@ function BlogSection() {
     </svg>
   );
   
-  const { loading, error } = useFetch("http://localhost:1337/api/blogs");
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -44,9 +43,6 @@ function BlogSection() {
       document.removeEventListener("wheel", handleWheel);
     };
   }, []);
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
-
   return (
     <div className={`${redhat.className} ${styles.Blog_section}`}>
       <div className={styles.Blog_Outer}>
