@@ -19,7 +19,7 @@
 }
 
 .Blog_button {
-  @apply gap-3 justify-center lg:ml-64 hidden lg:flex flex-row  sm:w-6/12 md:w-8/12 lg:w-[13vw] bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 px-4 rounded-3xl my-7;
+  @apply gap-3 justify-center lg:ml-64 hidden lg:flex flex-row  sm:w-6/12 md:w-8/12 lg:w-5/12 bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 px-4 rounded-3xl my-7;
 }
 .Blog_section {
   @apply bg-gradient-to-l  from-orange-500 to-black rounded-[60px] py-12 sm:py-5 sm:h-screen md:h-[900px] lg:h-[650px] mt-11  md:flex-col lg:flex-row shadow-none;

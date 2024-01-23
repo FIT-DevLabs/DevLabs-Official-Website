@@ -1,26 +1,30 @@
 {"projects" : [
     {
         "id": 1,
-        "name":"Project Name",
+        "name":"RIBA",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/app.jpg"
+        "url":"/projectSection/project.jpg",
+        "status":"finished"
     },
     {
         "id": 2,
         "name":"Project Name",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/app.jpg"  
+        "url":"/projectSection/project.jpg",
+        "status":  "Onging..."
     },
     {
         "id": 3,
         "name":"Project Name",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/app.jpg"
+        "url":"/projectSection/project.jpg",
+        "status":"Paused"
     },
     {
         "id": 4,
         "name":"Project Name",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/app.jpg"
+        "url":"/projectSection/project.jpg",
+        "status":"finished"
     }
 ]}
