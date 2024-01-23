@@ -26,5 +26,12 @@
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "url":"/projectSection/project.jpg",
         "status":"finished"
+    },{
+        "id": 5,
+        "name":"Project Name",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "url":"/projectSection/project.jpg",
+        "status":"finished"
     }
+    
 ]}

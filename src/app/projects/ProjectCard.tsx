@@ -46,7 +46,7 @@ export default function ProjectCard({
         <div className ="font-thin text-[15px]">
           {description}
         </div>
-        <span>{status}</span>
+        <span><span className="font-semibold">status:</span> {status}</span>
       </div>
     </div>
   );
