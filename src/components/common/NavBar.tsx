@@ -3,6 +3,8 @@
 import { useState } from "react";
 import styles from "@/styles/NavBar.module.css";
 import Button from "./Button";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 
 const NavBar2 = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,29 +25,31 @@ const NavBar2 = () => {
       behavior: "smooth",
     });
   }
+  const pathname = usePathname();
 
   return (
+    
     <nav className={styles.nav}>
       <div className={styles.navbar_outer}>
         {/* Left side: Logo */}
         <div className={styles.nav_logo}>
-          <a href="#" className={styles.logo_link}>
+          <Link href="/" className={styles.logo_link}>
             <img
               src="../navbar/devlabs_logo.png"
               className={styles.logo_image}
               alt="Logo"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Center: Navigation Links (hidden in mobile view) */}
         <div className={styles.nav_links}>
-          <a href="#" className={styles.nav_item}>
+          <Link href="/services" className={`${styles.nav_item} link ${pathname === '/services' ? 'border-b-[#e48f5b]' : ''}`}>
             Services
-          </a>
-          <a href="#" className={styles.nav_item}>
+          </Link>
+          <Link href="/projects" className={`${styles.nav_item} link ${pathname === '/projects' ? 'border-b-[#e48f5b]' : ''}`}>
             Work
-          </a>
+          </Link>
           {/* <a href="#" className={styles.nav_item}>
             Blogs
           </a> */}
@@ -114,7 +118,7 @@ const NavBar2 = () => {
                 </a>
               </div>
               <div className={styles.mobile_nav_item_outer}>
-                <a href="/work" className={styles.mobile_nav_item}>
+                <a href="/projects" className={styles.mobile_nav_item}>
                   Work
                 </a>
               </div>

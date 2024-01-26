@@ -1,7 +1,41 @@
 "use client";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/Md";
 import { useState } from "react";
 import Image from "next/image";
+const arrowleft: any = (
+  <svg
+    width="20px"
+    height="20px"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ transform: "rotate(180deg)" }}
+  >
+    <path
+      d="M9 6L15 12L9 18"
+      stroke="#FFFFFF"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+const arrowright: any = (
+  <svg
+    width="20px"
+    height="20px"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M9 6L15 12L9 18"
+      stroke="#FFFFFF"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
 
 export default function StorySectionCarousel() {
   const slides: string[] = [
@@ -44,12 +78,12 @@ export default function StorySectionCarousel() {
       <div className="absolute top-0 px-5 md:px-8 lg:px-10 text-2xl w-full flex justify-between items-center h-full">
         <div className="rounded-3xl bg-gray-400 w-[40px] h-[40px] flex items-center justify-center opacity-50">
           <button onClick={previousSlide}>
-            <MdKeyboardArrowLeft />
+            {arrowleft}
           </button>
         </div>
         <div className="rounded-3xl bg-gray-400 w-[40px] h-[40px] flex items-center justify-center opacity-50">
           <button onClick={nextSlide}>
-            <MdKeyboardArrowRight />
+            {arrowright}
           </button>
         </div>
       </div>

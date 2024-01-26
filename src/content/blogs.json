@@ -4,14 +4,14 @@
         "title": "MongoVerse Chronicles: Navigating the NoSQL Narrative",
         "date": "2021-10-10",
         "owner": "Dev Labs",
-        "url": "/MongoDB.png"
+        "url": "/blogSection/MongoDB.png"
     },
     {
         "id": 2,
         "title": "KubeInsights: Navigating the Container Orchestration Universe",
         "date": "2021-10-10",
         "owner": "Dev Labs",
-        "url": "/Kubernets.png"
+        "url": "/blogSection/Kubernets.png"
     },
     {
         "id": 3,
@@ -19,13 +19,20 @@
         "description":"",
         "date": "2021-10-10",
         "owner": "Dev Labs",
-        "url": "/Kubernets.png"
+        "url": "/blogSection/Kubernets.png"
     },
     {
         "id": 4,
         "title": "MongoVerse Chronicles: Navigating the NoSQL Narrative",
         "date": "2021-10-10",
         "owner": "Dev Labs",
-        "url": "/MongoDB.png"
+        "url": "/blogSection/MongoDB.png"
+    },
+    {
+        "id": 5,
+        "title": "MongoVerse Chronicles: Navigating the NoSQL Narrative",
+        "date": "2021-10-10",
+        "owner": "Dev Labs",
+        "url": "/blogSection/MongoDB.png"
     }
 ]}
