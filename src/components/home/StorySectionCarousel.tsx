@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+
 const arrowleft: any = (
   <svg
     width="20px"

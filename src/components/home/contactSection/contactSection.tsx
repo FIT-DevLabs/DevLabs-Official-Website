@@ -5,6 +5,7 @@ import React from "react";
 import styles from "@/styles/contact.module.css";
 
 import { facebookIcon, instagramIcon, linkedinIcon, twitterIcon } from "@/components/home/contactSection/icon"
+import Button from "@/components/common/Button";
 
 export default function Contact() {
 
@@ -78,13 +79,16 @@ export default function Contact() {
                 placeholder="Your Message"
                 id="msg"
               ></textarea>
-              <button
+              <div className="px-10 py-3 mb-10 md:mt-5" onClick={onSubmit}>
+                <Button navigate="" iconName="" color="orange" link="Submit" />
+              {/* <button
                 type="submit"
                 className={`${styles.formSubmitBtn} px-10 py-3 mb-10 md:mt-5`}
                 onClick={onSubmit}
               >
                 Submit
-              </button>
+              </button> */}
+              </div>
             </div>
           </div>
         </div>

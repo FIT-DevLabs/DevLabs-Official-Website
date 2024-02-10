@@ -2,6 +2,7 @@ import React from "react";
 import useFetch from "./useFetch";
 import styles from "@/styles/ProjectSection.module.css";
 import Image from "next/image";
+import Button from "@/components/common/Button";
 
 const arrow = (
   <svg
@@ -51,7 +52,8 @@ export default function Card({
         <div className ={styles.project_description}>
           {description}
         </div>
-        <button className={styles.project_read_button} >See More</button>
+        {/* <button className={styles.project_read_button} >See More</button> */}
+        <Button navigate="" iconName="" color="white" link="See more" />
       </div>
     </div>
   );

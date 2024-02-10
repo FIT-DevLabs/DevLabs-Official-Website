@@ -43,9 +43,9 @@
 .project_discription {
   @apply font-thin text-[15px];
 }
-.project_read_button {
+/* .project_read_button {
   @apply flex flex-row w-1/2 font-semibold justify-center py-4 text-black border border-black  rounded-3xl;
-}
+} */
 
 .project_image {
   @apply flex align-middle rounded-3xl overflow-auto  m-4;

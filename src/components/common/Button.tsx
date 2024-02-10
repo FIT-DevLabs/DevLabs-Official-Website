@@ -148,10 +148,12 @@ export default function Button({ ...props }: BottonProps) {
   return (
     <div className={styles.Button_Wrapper}>
       <button className={className} onClick={props.click}>
-        <a href={props.navigate} className={styles.tag}>
-          {props.link}
-          {icon}
-        </a>
+        <div className={styles.Animation}>
+          <a href={props.navigate} className={styles.tag}>
+            {props.link}
+            {icon}
+          </a>
+        </div>
       </button>
     </div>
   );

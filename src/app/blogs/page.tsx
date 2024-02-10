@@ -4,6 +4,7 @@ import styles from "@/styles/BlogSection.module.css";
 import BlogCard from "./BlogCard";
 import useFetch from "@/app/blogs/useFetch";
 import { Inter ,Red_Hat_Display} from '@next/font/google';
+import Button from "@/components/common/Button";
 
 const redhat = Red_Hat_Display({
   subsets: ['latin'],
@@ -57,9 +58,12 @@ function BlogSection() {
             informed and inspired in the dynamic realm of technology and
             innovation
           </p>
-          <button className={styles.Blog_button}>
+          <div className="my-7">
+          {/* <button className={styles.Blog_button}>
             Read more blogs{brokenArrow}
-          </button>
+          </button> */}
+            <Button navigate="" iconName="broken-arrow" color="orange" link="Read more blogs" />
+          </div>
         </div>
         <div className={styles.Blog_right} ref={sectionRef}>
           <BlogCard />
