@@ -1,5 +1,5 @@
 .Blog_Outer {
-  @apply flex flex-col-reverse  md:h-[800px] max-w-full lg:h-[540px]  lg:mt-6 justify-center sm:justify-evenly bg-white text-black rounded-[60px] shadow-lg py-12 md:py-5  lg:flex-row;
+  @apply flex flex-col-reverse  md:h-[800px] lg:h-[540px]  lg:mt-6 justify-center sm:justify-evenly bg-white text-black rounded-[60px] shadow-lg py-12 md:py-5  lg:flex-row;
 }
 
 .Blog_left {
@@ -15,11 +15,11 @@
 }
 
 .Blog_right {
-  @apply flex  md:max-w-full lg:max-w-[1500px] md:flex-col lg:flex-row py-12 overflow-hidden;
+    @apply flex  md:flex-col  lg:flex-row lg:py-12 overflow-hidden;
 }
 
 .Blog_section {
-  @apply bg-gradient-to-l  from-orange-500 to-black rounded-[60px] py-12 sm:py-5 sm:h-screen md:h-[900px] lg:h-[650px] mt-11  md:flex-col lg:flex-row shadow-none;
+  @apply bg-gradient-to-l  from-orange-500 to-black rounded-[60px] py-12 sm:py-5 sm:h-screen md:h-[900px] lg:h-[650px] mt-11  md:flex-col xl:flex-row shadow-none;
 }
 .Blog_button {
   @apply gap-3 justify-center lg:mr-64 hidden lg:flex flex-row  sm:w-6/12 md:w-8/12 lg:w-8/12 bg-orange-500 hover:bg-orange-400 text-white font-semibold py-4 px-4 rounded-3xl my-7;
@@ -29,13 +29,13 @@
 }
 
 .project_card_outer {
-  @apply flex flex-col md:flex-row h-[60vh] w-[340px] sm:h-[45vh] md:w-[700px] md:h-[400px] lg:w-[730px] bg-gray-100  text-black rounded-3xl mx-5 relative;
+  @apply flex flex-col md:flex-row lg:flex-col xl:flex-row lg:w-[470px] h-[60vh] w-[340px] sm:h-[45vh] md:w-[700px] md:h-[400px] lg:h-[400px] xl:w-[730px] xl:h-[500] bg-gray-100  text-black rounded-3xl mx-5 relative;
 }
 .project_card_image {
   @apply rounded-t-3xl max-w-full max-h-[50vh] overflow-hidden;
 }
 .project_disc {
-  @apply flex align-middle flex-col px-5 sm:pt-20 gap-6;
+  @apply flex align-middle flex-col px-5 sm:pt-0 md:pt-20 lg:pt-0 xl:pt-20 gap-6;
 }
 .project_name {
   @apply font-semibold text-left text-[35px];
@@ -48,5 +48,5 @@
 }
 
 .project_image {
-  @apply flex align-middle rounded-3xl overflow-auto  m-4;
+  @apply flex align-middle rounded-3xl overflow-auto m-4;
 }

@@ -50,7 +50,7 @@ function projectSection() {
   return (
     <div
       id="projectsection"
-      className={`${redhat.className} ${styles.Blog_section} `}
+      className={`${redhat.className} ${styles.Blog_section}`}
     >
       <div className={styles.Blog_Outer}>
         <div className={styles.Blog_right} ref={sectionRef}>
