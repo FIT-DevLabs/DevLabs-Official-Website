@@ -23,12 +23,14 @@ export default function ProjectCard({
   name,
   description,
   url,
+  projectlink,
   status
 }: {
   readonly Id: number;
   readonly name: string;
   readonly description: string;
   readonly url: string;
+  readonly projectlink: string | undefined;
   readonly status: string;
 }) {
   const Lasturl = url;
@@ -36,18 +38,30 @@ export default function ProjectCard({
 
   return (
     <div className="flex flex-col md:flex-row mt-3 h-[60vh] w-[340px] sm:h-[45vh] md:w-[700px] lg:w-[40vw] md:h-[360px] lg:items-stretch bg-neutral-100  text-black rounded-3xl relative shadow-lg pb-4">
-      <div className="align-middle rounded-3xl overflow-hidden m-4">
-        <Image src={Lasturl} alt="blog_card_image" width="1200" height="0" />
+      <div className="align-middle rounded-3xl overflow-hidden m-4 flex items-center">
+        <Image src={Lasturl} alt="blog_card_image" width="1200" height="0" className="rounded-2xl" />
       </div>
-      <div className ="flex flex-col px-3 sm:pt-20 gap-6">
-        <div className = "font-semibold text-left text-[35px]">
+      <div className="flex flex-col px-3 sm:pt-20 gap-6">
+        <div className="font-semibold text-left text-[35px]">
           {name}
         </div>
-        <div className ="font-thin text-[15px]">
+        <div className="font-thin text-[15px]">
           {description}
         </div>
+        {projectlink && (
+          <div className="">
+            <a
+              href={projectlink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600"
+            >
+              View Project
+            </a>
+          </div>
+        )}
         <span><span className="font-semibold">status:</span> {status}</span>
       </div>
-    </div>
+    </div >
   );
 }

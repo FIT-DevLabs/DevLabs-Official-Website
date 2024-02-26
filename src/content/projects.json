@@ -3,7 +3,8 @@
         "id": 1,
         "name":"RIBA",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/projectSection/project.jpg",
+        "url":"/projects/riba.png",
+        "projectlink": "https://archi.uom.lk/virtualexhibition/",
         "status":"finished"
     },
     {

@@ -19,7 +19,7 @@ function Services() {
             <span className="bg-neutral-100 flex grow flex-col items-stretch w-full px-12 py-9 rounded-3xl max-md:max-w-full max-md:mt-8 max-md:px-5">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/72ad7566dd743562616b67c75fa5c0ac49bd33a9d79744b98b5b6b73b7f00176?apiKey=0f1c56ca544b4243bdfa468c47ca1777&"
+                src="https://img.icons8.com/ios/120/F98F52/code--v1.png"
                 className="aspect-square object-contain object-center w-[70px] overflow-hidden self-center max-w-full"
               />
               <div className="text-black  md:text-lg text-lg font-medium leading-4 self-center whitespace-nowrap mt-9">
@@ -38,11 +38,11 @@ function Services() {
             <span className="bg-neutral-100 flex grow flex-col items-stretch w-full px-12 py-9 rounded-3xl max-md:max-w-full max-md:mt-8 max-md:px-5">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7a1ec87630d6d88baeef9fe4b72f6087a5869be7227855c3462ce6977970e7f?apiKey=0f1c56ca544b4243bdfa468c47ca1777&"
+                src="https://img.icons8.com/ios/100/F98F52/artificial-intelligence.png"
                 className="aspect-square object-contain object-center w-[70px] overflow-hidden self-center max-w-full"
               />
               <div className="text-black md:text-lg text-lg font-medium self-center whitespace-nowrap mt-10">
-                Data Science, AI and ML Service
+                Data Science, AI and ML Services
               </div>
               <div className="text-neutral-500 text-justify  md:text-xl text-sm mt-10 max-md:max-w-full max-md:mt-10">
                 DevLabs excels as a data strategy and implementation authority,
@@ -59,20 +59,16 @@ function Services() {
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
             <span className="bg-neutral-100 flex grow flex-col items-stretch w-full px-12 py-9 rounded-3xl max-md:max-w-full max-md:mt-8 max-md:px-5">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/72ad7566dd743562616b67c75fa5c0ac49bd33a9d79744b98b5b6b73b7f00176?apiKey=0f1c56ca544b4243bdfa468c47ca1777&"
-                className="aspect-square object-contain object-center w-[70px] overflow-hidden self-center max-w-full"
-              />{" "}
+              <img loading="lazy" className="aspect-square object-contain object-center w-[70px] overflow-hidden self-center max-w-full" width="96" height="96" src="https://img.icons8.com/ios/100/F98F52/iot-sensor.png" alt="iot-sensor" />
               <div className="text-black md:text-lg text-lg font-medium leading-4 self-center whitespace-nowrap mt-9">
-                Software Engineering Solutions
+                IoT and Embedded Systems
               </div>{" "}
               <div className="text-neutral-500 text-justify  md:text-xl text-sm mt-10 max-md:max-w-full">
-                At DevLabs, we firmly believe that exceptional software
-                solutions are born from strong partnerships. Our commitment goes
-                beyond the ordinary, as we invest wholeheartedly in fostering
-                trust and transparency with every client. Your success is the
-                cornerstone of ours.
+                DevLabs is a pioneer in IoT and embedded systems, providing
+                cutting-edge solutions to a global clientele. Our services
+                include hardware design, firmware development, and cloud
+                infrastructure, ensuring that our clients are always ahead of the
+                curve.
               </div>
             </span>
           </div>{" "}
@@ -80,18 +76,17 @@ function Services() {
             <span className="bg-neutral-100 flex grow flex-col items-stretch w-full px-12 py-9 rounded-3xl max-md:max-w-full max-md:mt-8 max-md:px-5">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f7a1ec87630d6d88baeef9fe4b72f6087a5869be7227855c3462ce6977970e7f?apiKey=0f1c56ca544b4243bdfa468c47ca1777&"
+                src="https://img.icons8.com/ios/100/F98F52/cloud-development.png"
                 className="aspect-square object-contain object-center w-[70px] overflow-hidden self-center max-w-full"
               />{" "}
               <div className="text-black tmd:text-lg text-lg font-medium self-center whitespace-nowrap mt-10">
-                Data Science, AI and ML Service
+                Cloud Solutions
               </div>{" "}
               <div className="text-neutral-500 text-justify  md:text-xl text-sm mt-10 max-md:max-w-full max-md:mt-10">
-                DevLabs excels as a data strategy and implementation authority,
-                providing invaluable insights to global players in retail,
-                manufacturing, and service industries. Our solutions drive
-                measurable ROIs, empowering businesses to thrive in today's
-                dynamic landscape.
+                DevLabs is a trusted partner in cloud solutions, offering
+                expertise in cloud migration, cloud-native development, and
+                cloud security. Our services are designed to empower businesses
+                to scale and innovate with confidence.
               </div>
             </span>
           </div>

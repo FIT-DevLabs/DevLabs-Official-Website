@@ -28,7 +28,7 @@ const NavBar2 = () => {
   const pathname = usePathname();
 
   return (
-    
+
     <nav className={styles.nav}>
       <div className={styles.navbar_outer}>
         {/* Left side: Logo */}
@@ -44,6 +44,9 @@ const NavBar2 = () => {
 
         {/* Center: Navigation Links (hidden in mobile view) */}
         <div className={styles.nav_links}>
+          <Link href="/" className={`${styles.nav_item} link ${pathname === '/' ? 'border-b-[#e48f5b]' : ''}`}>
+            Home
+          </Link>
           <Link href="/services" className={`${styles.nav_item} link ${pathname === '/services' ? 'border-b-[#e48f5b]' : ''}`}>
             Services
           </Link>

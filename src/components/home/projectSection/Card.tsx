@@ -42,16 +42,18 @@ export default function Card({
   return (
     <div className={styles.project_card_outer}>
       <div className={styles.project_image}>
-        <Image src={Lasturl} alt="blog_card_image" width="1200" height="400" />
+        <div className="align-middle rounded-3xl overflow-hidden flex items-center">
+          <Image src={Lasturl} alt="blog_card_image" width="1200" height="0" className="rounded-2xl" />
+        </div>
       </div>
-      <div className ={styles.project_disc}>
-        <div className = {styles.project_name}>
+      <div className={styles.project_disc}>
+        <div className={styles.project_name}>
           {name}
         </div>
-        <div className ={styles.project_description}>
+        <div className={styles.project_description}>
           {description}
         </div>
-        <button className={styles.project_read_button} >See More</button>
+        {/* <button className={styles.project_read_button} >See More</button> */}
       </div>
     </div>
   );
