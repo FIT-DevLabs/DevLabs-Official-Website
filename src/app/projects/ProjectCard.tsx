@@ -41,7 +41,7 @@ export default function ProjectCard({
       <div className="align-middle rounded-3xl overflow-hidden m-4 flex items-center">
         <Image src={Lasturl} alt="blog_card_image" width="1200" height="0" className="rounded-2xl" />
       </div>
-      <div className="flex flex-col px-3 sm:pt-20 gap-6">
+      <div className="flex flex-col px-3 sm:pt-0 lg:pt-5 xl:pt-10 gap-6">
         <div className="font-semibold text-left text-[35px]">
           {name}
         </div>
