@@ -42,7 +42,7 @@ export default function ProjectCard({
         <Image src={Lasturl} alt="blog_card_image" width="1200" height="0" className="rounded-2xl" />
       </div>
       <div className="flex flex-col px-3 sm:pt-0 lg:pt-5 xl:pt-10 gap-6">
-        <div className="font-semibold text-left text-[35px]">
+        <div className="font-semibold text-left text-[35px] mt-5">
           {name}
         </div>
         <div className="font-thin text-[15px]">
