@@ -11,54 +11,72 @@
 .nav {
   @apply bg-black p-4 relative flex flex-1 items-center justify-center;
 }
+
 .navbar_outer {
   @apply container mx-auto flex items-center justify-between md:mt-5;
 }
+
 .logo_link {
   @apply flex items-center;
 }
+
 .logo_image {
   @apply mr-3 h-[90px] w-[90px];
 }
+
 .hamburger_btn {
   @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 lg:hidden;
 }
+
 .nav_links {
   @apply lg:flex lg:space-x-4 hidden;
 }
+
 .nav_item {
   @apply block py-2 pl-3 lg:pr-4 border-b-[0.75px] transition duration-500 hover:border-b border-black hover:border-b-[#e48f5b] text-cyan-50;
 }
+
 .contact_btn {
   @apply block lg:py-2 lg:pl-5 lg:pr-5 lg:bg-[#ff7723] rounded-lg text-white;
   font-family: "redHat-b";
 }
+
 .mobile_nav_item {
   @apply block mb-2 border-b-[0.75px] transition duration-500 hover:border-b border-black hover:border-b-[#e48f5b] text-cyan-50 w-fit justify-end;
   font-family: "redHat-b";
 }
+
 .mobile_menu {
-  @apply lg:hidden bg-black p-4 fixed top-4 right-0 z-50 text-end;
+  @apply lg:hidden bg-black p-4 fixed top-8 right-0 z-50 text-end rounded-2xl;
   font-family: "redHat-b";
+  transition: transform 0.5s ease;
+  transform: translateY(0%);
 }
+
 .mobile_menu_close_btn {
   @apply absolute top-2 right-2 z-50;
 }
+
 .mobile_nav_items {
   @apply mt-6;
 }
+
 .mobile_nav_item_outer {
   @apply flex justify-end;
 }
+
 .nav_logo {
   @apply flex items-center md:ml-10 ml-5;
 }
+
 .col_add_btn {
   @apply flex items-center;
 }
+
 .col_btn {
   @apply lg:hidden text-black mr-4;
 }
+
 .contact_btn_outer {
-  @apply md:mr-10 hidden lg:block ;
+  @apply md:mr-10 hidden lg:block;
 }
