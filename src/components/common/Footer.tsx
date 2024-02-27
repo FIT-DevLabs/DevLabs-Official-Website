@@ -52,23 +52,23 @@ export default function Footer() {
     {
       id: 1,
       smlink: "",
-      imfPath: "/footer/social icons/fb.png",
+      imfPath: "https://img.icons8.com/ios-filled/100/FFFFFF/linkedin.png",
     },
     {
       id: 2,
       smlink: "",
-      imfPath: "/footer/social icons/insta.png",
+      imfPath: "https://img.icons8.com/ios-glyphs/100/FFFFFF/facebook-new.png",
     },
-    {
-      id: 3,
-      smlink: "",
-      imfPath: "/footer/social icons/Vector.png",
-    },
-    {
-      id: 4,
-      smlink: "",
-      imfPath: "/footer/social icons/linkedIn.png",
-    },
+    // {
+    //   id: 3,
+    //   smlink: "",
+    //   imfPath: "https://img.icons8.com/ios/100/FFFFFF/instagram-new--v1.png",
+    // },
+    // {
+    //   id: 4,
+    //   smlink: "",
+    //   imfPath: "https://img.icons8.com/ios/100/FFFFFF/x.png",
+    // },
   ];
 
   return (
@@ -103,7 +103,7 @@ export default function Footer() {
         </div> */}
       </div>
       <div className="h-[2px] flex justify-center items-center  bg-orange-400 mx-4 md:m-0"></div>
-      <div className="flex flex-row justify-center lg:justify-normal gap-8 py-8 ">
+      <div className="flex flex-row justify-center lg:justify-normal gap-4 py-8 ">
         {SocialMediaLinks.map((item) => (
           <div className="inline-block p-1 rounded-lg transition duration-300 ease-in-out hover:bg-orange-500">
             {" "}
@@ -112,8 +112,8 @@ export default function Footer() {
                 src={item.imfPath}
                 style={{ height: "auto" }}
                 alt="social media icon"
-                width={20}
-                height={20}
+                width={35}
+                height={35}
               ></Image>{" "}
             </Link>
           </div>

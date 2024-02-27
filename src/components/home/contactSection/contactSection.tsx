@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 
 
-import { facebookIcon, instagramIcon, linkedinIcon, twitterIcon } from "@/components/home/contactSection/icon"
+import { facebookIcon, linkedinIcon } from "@/components/home/contactSection/icon"
 
 export default function Contact() {
 
@@ -25,6 +25,9 @@ export default function Contact() {
       const response = await axios.post("/api/contact", data);
       if (response.status === 200) {
         toast.success("Message sent successfully");
+        nameInput.value = "";
+        emailInput.value = "";
+        messageInput.value = "";
       }
       console.log(response);
     } catch (error) {
@@ -51,27 +54,31 @@ export default function Contact() {
               <div className={`${styles.socialMediaIcons} mt-10`}>
                 <div className="flex justify-start gap-8 md:gap-5 sm:gap-12">
                   <Image
-                    src={facebookIcon}
-                    alt="Facebook Logo"
-                    className={`${styles.socialIcons} w-5 sm:w-10 `}
+                    src={"https://img.icons8.com/ios-filled/100/000000/linkedin.png"}
+                    alt="LinkedIn Logo"
+                    width={35}
+                    height={35}
+                    className={`${styles.socialIcons} w-6 sm:w-10`}
                   />
                   <Image
+                    src={"https://img.icons8.com/ios-glyphs/100/000000/facebook-new.png"}
+                    alt="Facebook Logo"
+                    width={35}
+                    height={35}
+                    className={`${styles.socialIcons} w-5 sm:w-10 `}
+                  />
+                  {/* <Image
                     src={twitterIcon}
                     alt="Twitter Logo"
                     className={`${styles.socialIcons} w-6 sm:w-10`}
-                  />
+                  /> */}
 
-                  <Image
-                    src={linkedinIcon}
-                    alt="LinkedIn Logo"
-                    className={`${styles.socialIcons} w-6 sm:w-10`}
-                  />
 
-                  <Image
+                  {/* <Image
                     src={instagramIcon}
                     alt="Instagram Logo"
                     className={`${styles.socialIcons} w-6 sm:w-10`}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
