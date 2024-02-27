@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/styles/contact.module.css";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 import { facebookIcon, instagramIcon, linkedinIcon, twitterIcon } from "@/components/home/contactSection/icon"
 
@@ -23,17 +25,16 @@ export default function Contact() {
       email: emailInput.value,
       message: messageInput.value,
     };
-
-    console.log("Data:", data);
-
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ data }),
-    });
-    console.log(res)
+    try {
+      const response = await axios.post("/api/contact", data);
+      if (response.status === 200) {
+        toast.success("Message sent successfully");
+      }
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+      toast.error("Message not sent");
+    }
   }
 
   return (
