@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/styles/NavBar.module.css";
 import Button from "./Button";
 import Link from 'next/link';
@@ -8,6 +8,22 @@ import { usePathname } from 'next/navigation'
 
 const NavBar2 = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Add event listener when component mounts
+    window.addEventListener('scroll', handleScroll);
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }); // Empty dependency array ensures that this effect runs only once
+
+  const handleScroll = () => {
+    // Close mobile menu if open
+    if (isMobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -25,17 +41,21 @@ const NavBar2 = () => {
       behavior: "smooth",
     });
   }
+
+  const handleRedirect = (location: string) => {
+    window.location.href = location;
+  }
+
   const pathname = usePathname();
 
   return (
-    
     <nav className={styles.nav}>
       <div className={styles.navbar_outer}>
         {/* Left side: Logo */}
         <div className={styles.nav_logo}>
           <Link href="/" className={styles.logo_link}>
             <img
-              src="../navbar/devlabs_logo.png"
+              src="/devlabs_logo.png"
               className={styles.logo_image}
               alt="Logo"
             />
@@ -44,6 +64,9 @@ const NavBar2 = () => {
 
         {/* Center: Navigation Links (hidden in mobile view) */}
         <div className={styles.nav_links}>
+          <Link href="/" className={`${styles.nav_item} link ${pathname === '/' ? 'border-b-[#e48f5b]' : ''}`}>
+            Home
+          </Link>
           <Link href="/services" className={`${styles.nav_item} link ${pathname === '/services' ? 'border-b-[#e48f5b]' : ''}`}>
             Services
           </Link>
@@ -77,13 +100,23 @@ const NavBar2 = () => {
               />
             </svg>
           </button>
-          {!isMobileMenuOpen && (
+          {!isMobileMenuOpen && pathname === "/" && (
             <div className={styles.contact_btn_outer}>
               <Button
                 link="Contact Us"
                 color="orange"
                 iconName=""
                 click={() => scrollVertically({ preventDefault: () => { } })}
+              />
+            </div>
+          )}
+          {!isMobileMenuOpen && pathname !== "/" && (
+            <div className={styles.contact_btn_outer}>
+              <Button
+                link="Contact Us"
+                color="orange"
+                iconName=""
+                click={() => handleRedirect("/#contactus")}
               />
             </div>
           )}
@@ -113,14 +146,19 @@ const NavBar2 = () => {
             </button>
             <div className={styles.mobile_nav_items}>
               <div className={styles.mobile_nav_item_outer}>
-                <a href="/services" className={styles.mobile_nav_item}>
-                  Services
-                </a>
+                <Link href="/" className={styles.mobile_nav_item}>
+                  Home
+                </Link>
               </div>
               <div className={styles.mobile_nav_item_outer}>
-                <a href="/projects" className={styles.mobile_nav_item}>
+                <Link href="/services" className={styles.mobile_nav_item}>
+                  Services
+                </Link>
+              </div>
+              <div className={styles.mobile_nav_item_outer}>
+                <Link href="/projects" className={styles.mobile_nav_item}>
                   Work
-                </a>
+                </Link>
               </div>
               {/* <div className={styles.mobile_nav_item_outer}>
                 <a href="#" className={styles.mobile_nav_item}>
@@ -132,7 +170,7 @@ const NavBar2 = () => {
                   About Us
                 </a>
               </div> */}
-              <div className={styles.mobile_nav_item_outer}>
+              {pathname === "/" && <div className={styles.mobile_nav_item_outer}>
                 <Button
                   link="Contact Us"
                   color="orange"
@@ -140,6 +178,16 @@ const NavBar2 = () => {
                   click={() => scrollVertically({ preventDefault: () => { } })}
                 />
               </div>
+              }
+              {pathname !== "/" && <div className={styles.mobile_nav_item_outer}>
+                <Button
+                  link="Contact Us"
+                  color="orange"
+                  iconName=""
+                  click={() => handleRedirect("/#contactus")}
+                />
+              </div>
+              }
             </div>
           </div>
         )

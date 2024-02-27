@@ -8,7 +8,8 @@ import { facebookIcon, instagramIcon, linkedinIcon, twitterIcon } from "@/compon
 
 export default function Contact() {
 
-  const onSubmit = () => {
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
     const messageInput = document.getElementById("msg") as HTMLInputElement;
@@ -16,11 +17,28 @@ export default function Contact() {
     console.log("Name:", nameInput.value);
     console.log("Email:", emailInput.value);
     console.log("Message:", messageInput.value);
-  };
+
+    const data = {
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+
+    console.log("Data:", data);
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ data }),
+    });
+    console.log(res)
+  }
 
   return (
-    <div id="contactus" className='bg-white w-screen flex items-center justify-center relative sm:mt-6 mb-10 rounded'>
-      <div className="bg-white w-4/5 rounded-t-[90px] lg:mt-[-100px] md:mt-[-100px] mt-[-30px] shadow-2xl">
+    <div id="contactus" className='contactussection bg-white w-screen flex items-center justify-center relative sm:mt-6 mb-10 rounded'>
+      <div className="bg-white w-4/5 rounded-t-[90px] lg:mt-[-70px] md:mt-[-60px] mt-[-30px] shadow-2xl">
         <div className="grid grid-cols-12">
           <div className="col-span-12 md:col-span-6 ">
             <div className="px-10 md:px-14 lg:px-28 mt-20 md:mt-20 lg:mt-30">

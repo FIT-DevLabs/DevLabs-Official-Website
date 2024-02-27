@@ -1,37 +1,48 @@
-{"projects" : [
+{
+  "projects": [
     {
-        "id": 1,
-        "name":"RIBA",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/projectSection/project.jpg",
-        "status":"finished"
+      "id": 1,
+      "name": "RIBA",
+      "description": "Developed for the use of RIBA Re-Validation of B.Arch (Hons) Degree Programme at the Department of Architecture, University of Moratuwa, Sri Lanka_2023.",
+      "url": "/projects/riba.png",
+      "projectlink": "https://archi.uom.lk/virtualexhibition/",
+      "status": "Completed"
     },
     {
-        "id": 2,
-        "name":"Project Name",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/projectSection/project.jpg",
-        "status":  "Onging..."
+      "id": 2,
+      "name": "Laundromat",
+      "description": "Laundry Management System is designed to efficiently handle the operations of our client's laundromats across multiple branches in Sri Lanka. From receiving orders to delivering clean clothes to customers, this system streamlines the entire process, ensuring timely and accurate service for all laundry needs.",
+      "url": "/projects/projectbydevlabs.png",
+      "status": "Ongoing..."
     },
     {
-        "id": 3,
-        "name":"Project Name",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/projectSection/project.jpg",
-        "status":"Paused"
+      "id": 3,
+      "name": "Gavesha Project",
+      "description": "The Gavesha Project involves the development of a website tailored to the specific requirements of Gavesha Labs. From showcasing their services to providing essential information, our team is dedicated to crafting a dynamic online presence that aligns with Gavesha Labs' vision and goals.",
+      "url": "/projects/projectbydevlabs.png",
+      "status": "Ongoing..."
     },
     {
-        "id": 4,
-        "name":"Project Name",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/projectSection/project.jpg",
-        "status":"finished"
-    },{
-        "id": 5,
-        "name":"Project Name",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "url":"/projectSection/project.jpg",
-        "status":"finished"
+      "id": 4,
+      "name": "Devlabs Website",
+      "description": "   The Devlabs Site is a hub of information about Devlabs, providing insights into our mission, vision, and how we cater to the needs of our undergraduates. Through this platform, visitors can explore the various services offered by Devlabs and understand how we contribute to the academic and professional growth of students and also the services that we offer to the co-operate world.",
+      "url": "/projects/projectbydevlabs.png",
+      "status": "Ongoing..."
+    },
+    {
+      "id": 5,
+      "name": "Devlabs HRM",
+      "description": "Devlabs HRM is a cutting-edge platform designed to manage the talent pool of our undergraduates effectively. From tracking CVs to monitoring contributions, this system provides valuable insights into the skills and achievements of students associated with Devlabs, facilitating better recruitment and project allocation processes.",
+      "url": "/projects/projectbydevlabs.png",
+      "status": "Ongoing..."
+    },
+    {
+      "id": 6,
+      "name": "IT Faculty UOM Site",
+      "description": "The IT Faculty UOM Site aims the online experience for our faculty members and students alike. With comprehensive sections and detailed information, users, both internal and external, can easily access everything they need, from course details to faculty resources.",
+      "url": "/projects/projectbydevlabs.png",
+      "status": "Ongoing..."
     }
     
-]}
+  ]
+}

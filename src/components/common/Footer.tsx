@@ -72,8 +72,8 @@ export default function Footer() {
   ];
 
   return (
-    <div className="bg-black flex flex-col w-full  font-sans text-white md:px-[50px] px-[4px] lg:pt-[60px] pb-1 lg:rounded-t-[50px] rounded-t-[30px] pt-[30px]">
-      <div className="flex lg:flex-row flex-col mb-16">
+    <div className="bg-black flex flex-col w-full  font-[redHat-r] text-white md:px-[50px] px-[4px] lg:pt-[60px] pb-1 lg:rounded-t-[50px] rounded-t-[30px] pt-[30px]">
+      <div className="flex md:flex-row flex-col mb-8 items-center">
         <div className="flex flex-col lg:w-1/3 w-full">
           <div>
             <Image
@@ -83,23 +83,24 @@ export default function Footer() {
               src="/footer/devlabs_logo_new.png"
             ></Image>
           </div>
-          <div>
-            <p className="text-sm font-normal text-justify px-6 ">
-              Empowering Businesses with Complete IT Solutions. Discover the
-              Possibilities at DevLabs. Unleash the potential of technology with
-              our comprehensive software services, ranging from development to
-              seamless integration. Your success, our commitment.
-            </p>
-          </div>
+
         </div>
-        <div className="flex flex-row lg:w-3/5 w-full lg:mt-0 mt-8 ">
+        <div className="">
+          <p className="text-sm font-normal text-justify px-6 ">
+            Empowering Businesses with Complete IT Solutions. Discover the
+            Possibilities at DevLabs. Unleash the potential of technology with
+            our comprehensive software services, ranging from development to
+            seamless integration. Your success, our commitment.
+          </p>
+        </div>
+        {/* <div className="flex flex-row lg:w-3/5 w-full lg:mt-0 mt-8 ">
           <div className="flex md:w-2/5 w-2/7 lg:justify-center">
             <ListComponent title="Pages" items={PagesList} />
           </div>
           <div className="flex md:w-3/5 w-5/7 lg:justify-center">
             <ListComponent title="Services" items={ServiceList} />
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="h-[2px] flex justify-center items-center  bg-orange-400 mx-4 md:m-0"></div>
       <div className="flex flex-row justify-center lg:justify-normal gap-8 py-8 ">

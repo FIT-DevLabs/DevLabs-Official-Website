@@ -96,14 +96,14 @@ function onWheel(
     return;
   }
 
-  if (ev.deltaY < 0) {
+  if (ev.deltaY > 0) {
     const nextGroupItems = slidingWindow(
       items.toItemsKeys(),
       visibleItems
     ).next();
     const { center } = getItemsPos(nextGroupItems);
     scrollToItem(getItemById(center), "smooth", "center");
-  } else if (ev.deltaY > 0) {
+  } else if (ev.deltaY < 0) {
     const prevGroupItems = slidingWindow(
       items.toItemsKeys(),
       visibleItems
