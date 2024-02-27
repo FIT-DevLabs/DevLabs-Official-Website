@@ -37,12 +37,12 @@ export default function ProjectCard({
 
 
   return (
-    <div className="flex flex-col md:flex-row mt-3 h-[60vh] w-[340px] sm:h-[45vh] md:w-[700px] lg:w-[40vw] md:h-[360px] lg:items-stretch bg-neutral-100  text-black rounded-3xl relative shadow-lg pb-4">
+    <div className="flex flex-col md:flex-row mt-3 h-auto w-[340px] sm:h-auto md:w-[700px] lg:w-[40vw] md:h-auto items-stretch bg-neutral-100  text-black rounded-3xl relative shadow-lg pb-4">
       <div className="align-middle rounded-3xl overflow-hidden m-4 flex items-center">
         <Image src={Lasturl} alt="blog_card_image" width="1200" height="0" className="rounded-2xl" />
       </div>
-      <div className="flex flex-col px-3 sm:pt-0 lg:pt-5 xl:pt-10 gap-6">
-        <div className="font-semibold text-left text-[35px] mt-5">
+      <div className="flex flex-col px-3 sm:pt-20 lg:pt-10 gap-6">
+        <div className="font-semibold text-left text-[35px]">
           {name}
         </div>
         <div className="font-thin text-[15px]">
