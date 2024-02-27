@@ -6,6 +6,7 @@ import styles from "@/styles/contact.module.css";
 import toast from "react-hot-toast";
 import axios from "axios";
 
+
 import { facebookIcon, instagramIcon, linkedinIcon, twitterIcon } from "@/components/home/contactSection/icon"
 
 export default function Contact() {
@@ -15,11 +16,6 @@ export default function Contact() {
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
     const messageInput = document.getElementById("msg") as HTMLInputElement;
-
-    console.log("Name:", nameInput.value);
-    console.log("Email:", emailInput.value);
-    console.log("Message:", messageInput.value);
-
     const data = {
       name: nameInput.value,
       email: emailInput.value,
