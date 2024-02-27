@@ -24,29 +24,20 @@ export default function Contact() {
       message: messageInput.value,
     };
 
-    
+    console.log("Data:", data);
 
-    // Send the form data to Google Forms
-    const response = await fetch('https://forms.gle/w6dcU5TW2DNBCR4a9', {
-      mode: 'no-cors',
+    const res = await fetch('/api/contact', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
-      body: new URLSearchParams(data).toString(),
+      body: JSON.stringify({ data }),
     });
-    if (response.ok) {
-      // Handle success
-      console.log('Form submitted successfully!');
-    } else {
-      // Handle error
-      console.error('Form submission failed.');
-    }
-
-  };
+    console.log(res)
+  }
 
   return (
-    <div id="contactus" className='bg-white w-screen flex items-center justify-center relative sm:mt-6 mb-10 rounded'>
+    <div id="contactus" className='contactussection bg-white w-screen flex items-center justify-center relative sm:mt-6 mb-10 rounded'>
       <div className="bg-white w-4/5 rounded-t-[90px] lg:mt-[-70px] md:mt-[-60px] mt-[-30px] shadow-2xl">
         <div className="grid grid-cols-12">
           <div className="col-span-12 md:col-span-6 ">

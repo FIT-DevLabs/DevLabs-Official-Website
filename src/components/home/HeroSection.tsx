@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import DOTS from "vanta/src/vanta.dots";
 import Button from "../common/Button";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
   useEffect(() => {
@@ -47,7 +50,7 @@ const HeroSection = () => {
               link="Discover"
               color="orange"
               iconName="arrow"
-              click={() => scrollVertically({ preventDefault: () => {} })}
+              click={() => scrollVertically({ preventDefault: () => { } })}
             />
           </div>
         </div>

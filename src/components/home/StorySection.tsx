@@ -14,8 +14,8 @@ export default function StorySection() {
 
   return (
     <div>
-      <section className="grid mx-1 xl:grid-cols-8 my-5 lg:ml-10">
-        <div className="col-span-8 xl:col-span-4">
+      <section className="storysectiondiv grid mx-1 xl:grid-cols-8 my-5 lg:ml-10">
+        <div className="sm:col-span-8 xl:col-span-4">
           <div className="w-full  bg-yellow-800 bg-gradient-to-r from-black pt-4 rounded-t-[30px] md:bg-yellow-800 md:bg-gradient-to-b md:from-black md:pl-6 md:pt-0 md:rounded-l-[70px] relative">
             <Image
               src={"/story_section/carousel_images/facultyPicCover2.jpg"}
@@ -49,7 +49,7 @@ export default function StorySection() {
           </div>
         </div>
       </section>
-      <section className="grid mx-1">
+      <section className="carouseldiv grid mx-1">
         <StorySectionCarousel />
       </section>
     </div>
