@@ -1,8 +1,49 @@
+"use client"
 import * as React from "react";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
+
+  useEffect(() => {
+    ["servicespage", "item2"].forEach((className) =>
+      animateElement(
+        `.${className}`,
+        { y: 200, opacity: 0, scale: 1 },
+        { y: 0, scale: 1, opacity: 1 }
+      )
+    );
+  });
+
+  const animateElement = (
+    selector: string,
+    from: gsap.TweenVars,
+    to: gsap.TweenVars
+  ) => {
+    const element = document.querySelector(selector);
+    gsap.fromTo(
+      element,
+      { ...from },
+      {
+        ...to,
+        duration: 2,
+        ease: "power1.inOut",
+        scrollTrigger: getScrollTrigger(selector),
+      }
+    );
+  };
+
+  const getScrollTrigger = (trigger: string) => ({
+    trigger,
+    start: "top bottom",
+    end: "top bottom",
+    toggleActions: "play none none none",
+    scrub: 1,
+  });
   return (
-    <span className="flex flex-col items-stretch px-5 md:m-20 mt-10">
+    <span className="servicespage flex flex-col items-stretch px-5 md:m-20 mt-10">
       <div className="text-black md:text-4xl text-2xl font-semibold leading-4 w-full max-md:max-w-full">
         Our services and expertise
       </div>
@@ -13,7 +54,7 @@ function Services() {
         leadership, we've built a formidable reputation that consistently draws
         the top local talent to our ranks.
       </div>
-      <div className="w-full mt-16 max-md:max-w-full max-md:mt-10">
+      <div className="item1 w-full mt-16 max-md:max-w-full max-md:mt-10">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
             <span className="bg-neutral-100 flex grow flex-col items-stretch w-full px-12 py-9 rounded-3xl max-md:max-w-full max-md:mt-8 max-md:px-5">
@@ -55,7 +96,7 @@ function Services() {
           </div>
         </div>
       </div>{" "}
-      <div className="w-full mt-8 max-md:max-w-full">
+      <div className="item2 w-full mt-8 max-md:max-w-full">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
             <span className="bg-neutral-100 flex grow flex-col items-stretch w-full px-12 py-9 rounded-3xl max-md:max-w-full max-md:mt-8 max-md:px-5">

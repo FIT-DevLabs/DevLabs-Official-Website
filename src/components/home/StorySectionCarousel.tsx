@@ -39,10 +39,8 @@ const arrowright: any = (
 
 export default function StorySectionCarousel() {
   const slides: string[] = [
-    "facultyPic1.jpg",
-    "facultyPic1.jpg",
-    "facultyPic1.jpg",
-    "facultyPic1.jpg",
+    "it1.jpg",
+    "it2.jpg",
   ];
   let [current, setCurrent] = useState(0);
 
@@ -70,6 +68,7 @@ export default function StorySectionCarousel() {
             alt={`Image ${index}`}
             width={0}
             height={0}
+            quality={100}
             sizes="100vw"
             style={{ minWidth: "100%", height: "auto" }}
           />
