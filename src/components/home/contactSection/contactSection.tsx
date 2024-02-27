@@ -15,7 +15,6 @@ export default function Contact() {
     const nameInput = document.getElementById("name") as HTMLInputElement;
     const emailInput = document.getElementById("email") as HTMLInputElement;
     const messageInput = document.getElementById("msg") as HTMLInputElement;
-
     const data = {
       name: nameInput.value,
       email: emailInput.value,
